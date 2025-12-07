@@ -21,8 +21,8 @@ import {
 const portfolioVideos = [
   {
     title: 'Motion Graphics',
-    videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/so_0/q_auto,w_800,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.jpg',
+    videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765080386/V3_1_qfg6xy.mp4',
+    thumbnailUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/so_0/q_auto,w_800,f_auto/v1765080386/V3_1_qfg6xy.jpg',
     type: 'modal',
   },
   {
