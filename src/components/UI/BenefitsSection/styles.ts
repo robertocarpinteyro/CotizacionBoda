@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   width: 100%;
   padding: 8rem 0;
-  background: linear-gradient(180deg, var(--Background) 0%, #0f0f0f 100%);
+  background: linear-gradient(180deg, var(--Background) 0%, #f8f9fa 100%);
 
   @media (max-width: 768px) {
     padding: 4rem 0;
@@ -38,14 +38,14 @@ export const Grid = styled.div`
 export const Card = styled.div`
   padding: 3rem 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.02);
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(43, 137, 46, 0.3);
+    background: rgba(0, 102, 204, 0.05);
+    border-color: rgba(0, 102, 204, 0.3);
     transform: translateY(-8px);
   }
 
@@ -68,7 +68,7 @@ export const Icon = styled.div`
 export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
@@ -78,7 +78,7 @@ export const Title = styled.h3`
 
 export const Description = styled.p`
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.6;
 
   @media (max-width: 768px) {

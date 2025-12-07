@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   width: 100%;
   padding: 8rem 0;
-  background: linear-gradient(180deg, #0f0f0f 0%, var(--Background) 100%);
+  background: linear-gradient(180deg, #f8f9fa 0%, var(--Background) 100%);
 
   @media (max-width: 768px) {
     padding: 4rem 0;
@@ -32,7 +32,7 @@ export const Header = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 1rem;
   line-height: 1.2;
 
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.p`
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -86,14 +86,14 @@ export const ServiceCard = styled.div`
   display: flex;
   gap: 1.5rem;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.02);
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(43, 137, 46, 0.3);
+    background: rgba(0, 102, 204, 0.05);
+    border-color: rgba(0, 102, 204, 0.3);
     transform: translateX(8px);
   }
 
@@ -116,7 +116,7 @@ export const ServiceIcon = styled.div`
 export const ServiceTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 0.5rem;
 
   @media (max-width: 768px) {
@@ -126,7 +126,7 @@ export const ServiceTitle = styled.h3`
 
 export const ServiceDescription = styled.p`
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.6;
 
   @media (max-width: 768px) {
@@ -136,9 +136,9 @@ export const ServiceDescription = styled.p`
 
 export const HighlightBox = styled.div`
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(43, 137, 46, 0.15) 0%, rgba(43, 137, 46, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.15) 0%, rgba(0, 102, 204, 0.05) 100%);
   border-radius: 1rem;
-  border-left: 4px solid var(--green);
+  border-left: 4px solid var(--blue);
 
   @media (max-width: 768px) {
     padding: 1.5rem;
@@ -148,7 +148,7 @@ export const HighlightBox = styled.div`
 export const HighlightTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 1rem;
 
   @media (max-width: 768px) {
@@ -158,7 +158,7 @@ export const HighlightTitle = styled.h3`
 
 export const HighlightText = styled.p`
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   line-height: 1.7;
 
   @media (max-width: 768px) {

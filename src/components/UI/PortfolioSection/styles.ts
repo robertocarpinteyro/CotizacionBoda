@@ -32,7 +32,7 @@ export const Header = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 1rem;
   line-height: 1.2;
 
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.p`
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -80,7 +80,7 @@ export const VideoCard = styled.div`
 export const VideoTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   text-align: center;
 
   @media (max-width: 768px) {
@@ -95,12 +95,12 @@ export const VideoThumbnail = styled.div`
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--blue);
     transform: scale(1.02);
   }
 
@@ -128,8 +128,8 @@ export const PlayButton = styled.div`
   transition: all 0.3s ease;
 
   ${VideoThumbnail}:hover & {
-    background: rgba(43, 137, 46, 0.3);
-    border-color: rgba(43, 137, 46, 0.5);
+    background: rgba(0, 102, 204, 0.3);
+    border-color: rgba(0, 102, 204, 0.5);
     transform: translate(-50%, -50%) scale(1.1);
   }
 

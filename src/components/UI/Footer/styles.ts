@@ -34,7 +34,7 @@ export const FooterMainContent = styled.div`
   display: flex;
   flex-direction: column;
   padding: 3.75rem 0 3.25rem;
-  border-top: 0.0625rem solid #3d3d3d;
+  border-top: 0.0625rem solid #e0e0e0;
   gap: 3.25rem;
 `;
 
@@ -56,7 +56,7 @@ export const QRContainer = styled.div`
   padding: 1.25rem 1rem;
   gap: 0.75rem;
   border-radius: 0.5rem;
-  border: 1px dashed var(--White, #fff);
+  border: 1px dashed var(--black, #000);
 `;
 
 export const QRImageCtn = styled.div``;

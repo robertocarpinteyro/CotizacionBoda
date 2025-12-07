@@ -26,7 +26,7 @@ export const Pill = styled.div`
   gap: 0.625rem;
   border-radius: 6.25rem;
   border: 0.2px solid #989898;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
   margin-bottom: 1rem;
 
@@ -50,7 +50,7 @@ export const HeroTextContainer = styled.div`
 
   p {
     max-width: 41.75rem;
-    color: #bdbdbd;
+    color: var(--light-gray);
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 auto;

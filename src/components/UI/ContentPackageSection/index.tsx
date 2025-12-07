@@ -24,12 +24,12 @@ const contentItems = [
   {
     title: 'Reels de Productos/Servicios',
     description: '3 reels destacando tus productos o servicios de manera creativa y atractiva.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06477_fzuo6v.jpg',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765124487/Zenith_Agosto_-41_byjgxy.jpg',
   },
   {
     title: 'Reels Cinematográficos',
     description: '3 reels cinematográficos capturados en spots instagrameables de la ciudad durante el recorrido.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080931/DSC01193_eevl9p.jpg',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765124488/Zenith_Agosto_-22_rbprxo.jpg',
   },
   {
     title: 'Motion Graphics',

@@ -21,8 +21,8 @@ import {
 const portfolioVideos = [
   {
     title: 'Motion Graphics',
-    videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765080386/V3_1_qfg6xy.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/so_0/q_auto,w_800,f_auto/v1765080386/V3_1_qfg6xy.jpg',
+    videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765124461/Zenith_Agosto_b2mlxm.mp4',
+    thumbnailUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/so_0/q_auto,w_800,f_auto/v1765124461/Zenith_Agosto_b2mlxm.jpg',
     type: 'modal',
   },
   {
@@ -58,7 +58,7 @@ const PortfolioSection = () => {
       <Container>
         <Header>
           <Title>Nuestro Trabajo</Title>
-          <Subtitle>Experiencia creando contenido automotriz de alta calidad</Subtitle>
+          <Subtitle>Experiencia creando contenido digital de alta calidad</Subtitle>
         </Header>
         <VideoGrid>
           {portfolioVideos.map((video, index) => (

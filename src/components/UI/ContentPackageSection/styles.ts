@@ -32,7 +32,7 @@ export const Header = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 1rem;
   line-height: 1.2;
 
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.p`
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -63,17 +63,17 @@ export const Grid = styled.div`
 `;
 
 export const Card = styled.div`
-  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 1rem;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
 
   &:hover {
-    border-color: var(--green);
+    border-color: var(--blue);
     transform: translateY(-8px);
-    box-shadow: 0 12px 32px rgba(43, 137, 46, 0.2);
+    box-shadow: 0 12px 32px rgba(0, 102, 204, 0.2);
   }
 
   @media (max-width: 768px) {
@@ -84,7 +84,7 @@ export const Card = styled.div`
 export const CardNumber = styled.div`
   font-size: 3rem;
   font-weight: 800;
-  color: var(--green);
+  color: var(--blue);
   opacity: 0.2;
   position: absolute;
   top: 1rem;
@@ -103,7 +103,7 @@ export const ImageContainer = styled.div`
 export const CardTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 0.75rem;
 
   @media (max-width: 768px) {
@@ -113,7 +113,7 @@ export const CardTitle = styled.h3`
 
 export const CardDescription = styled.p`
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.6;
 
   @media (max-width: 768px) {

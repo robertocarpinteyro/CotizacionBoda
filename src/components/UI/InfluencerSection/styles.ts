@@ -32,7 +32,7 @@ export const Header = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 1rem;
   line-height: 1.2;
 
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.p`
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -83,15 +83,15 @@ export const BenefitCard = styled.div`
   display: flex;
   gap: 1.5rem;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(43, 137, 46, 0.05) 0%, rgba(43, 137, 46, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05) 0%, rgba(0, 102, 204, 0.02) 100%);
   border-radius: 1rem;
-  border: 1px solid rgba(43, 137, 46, 0.2);
+  border: 1px solid rgba(0, 102, 204, 0.2);
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: rgba(43, 137, 46, 0.5);
+    border-color: rgba(0, 102, 204, 0.5);
     transform: translateX(8px);
-    background: linear-gradient(135deg, rgba(43, 137, 46, 0.1) 0%, rgba(43, 137, 46, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 102, 204, 0.05) 100%);
   }
 
   @media (max-width: 768px) {
@@ -113,7 +113,7 @@ export const BenefitIcon = styled.div`
 export const BenefitTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 0.5rem;
 
   @media (max-width: 768px) {
@@ -123,7 +123,7 @@ export const BenefitTitle = styled.h3`
 
 export const BenefitDescription = styled.p`
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   line-height: 1.6;
 
   @media (max-width: 768px) {
@@ -133,9 +133,9 @@ export const BenefitDescription = styled.p`
 
 export const HighlightBox = styled.div`
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(43, 137, 46, 0.15) 0%, rgba(43, 137, 46, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.15) 0%, rgba(0, 102, 204, 0.05) 100%);
   border-radius: 1rem;
-  border-left: 4px solid var(--green);
+  border-left: 4px solid var(--blue);
   margin-top: 1rem;
 
   @media (max-width: 768px) {
@@ -145,7 +145,7 @@ export const HighlightBox = styled.div`
 
 export const HighlightText = styled.p`
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   line-height: 1.7;
   font-style: italic;
 

@@ -43,7 +43,7 @@ export const AccordionItem = styled(motion.div)`
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  border-bottom: 0.0625rem solid #3d3d3d;
+  border-bottom: 0.0625rem solid #e0e0e0;
   overflow: hidden;
 `;
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   width: 100%;
   padding: 8rem 0;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   position: relative;
 
   &::before {
@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(43, 137, 46, 0.5), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 102, 204, 0.5), transparent);
   }
 
   @media (max-width: 768px) {
@@ -54,7 +54,7 @@ export const RightColumn = styled.div``;
 export const Title = styled.h2`
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   line-height: 1.2;
 
   @media (max-width: 768px) {
@@ -88,7 +88,7 @@ export const PriceTag = styled.div`
 export const Price = styled.div`
   font-size: 4rem;
   font-weight: 800;
-  color: var(--white);
+  color: var(--black);
   line-height: 1;
 
   @media (max-width: 768px) {
@@ -98,7 +98,7 @@ export const Price = styled.div`
 
 export const Period = styled.div`
   font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -124,7 +124,7 @@ export const CTAButton = styled.button`
   &:hover {
     background: var(--emerald);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(43, 137, 46, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.3);
   }
 
   @media (max-width: 768px) {
@@ -153,8 +153,8 @@ export const FeatureIcon = styled.div`
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: rgba(43, 137, 46, 0.2);
-  color: var(--green);
+  background: rgba(0, 102, 204, 0.1);
+  color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,7 +165,7 @@ export const FeatureIcon = styled.div`
 
 export const FeatureText = styled.span`
   font-size: 1.125rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   line-height: 1.6;
 
   @media (max-width: 768px) {

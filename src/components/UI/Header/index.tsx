@@ -24,7 +24,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <h1 style={{ color: 'white', fontSize: '1.5rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h1>
+          <h1 style={{ color: 'black', fontSize: '1.5rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h1>
         </LogoContainer>
       </Inner>
     </Wrapper>
