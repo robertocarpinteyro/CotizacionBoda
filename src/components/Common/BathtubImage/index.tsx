@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Container, ImageWrapper, Placeholder } from './styles';
+import { Container, ImageWrapper, Placeholder, VideoElement } from './styles';
 
 interface BathtubImageProps {
   src?: string;
@@ -18,17 +18,33 @@ const BathtubImage: React.FC<BathtubImageProps> = ({
   placeholder = 'Image placeholder - URL pending',
   objectFit = 'cover'
 }) => {
+  // Detectar si es un video
+  const isVideo = src && (src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov') || src.includes('/video/'));
+
   return (
     <Container $aspectRatio={aspectRatio}>
       {src ? (
         <ImageWrapper>
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            style={{ objectFit }}
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+          {isVideo ? (
+            <VideoElement
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{ objectFit }}
+            >
+              <source src={src} type="video/mp4" />
+              Tu navegador no soporta el elemento de video.
+            </VideoElement>
+          ) : (
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              style={{ objectFit }}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          )}
         </ImageWrapper>
       ) : (
         <Placeholder>

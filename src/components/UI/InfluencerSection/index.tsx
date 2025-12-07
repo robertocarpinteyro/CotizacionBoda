@@ -70,10 +70,10 @@ const InfluencerSection = () => {
           </TextColumn>
           <ImageColumn>
             <BathtubImage
-              src=""
+              src="https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765081678/AQM00fcFB9UXzP0XHk25z0YsAV6IQq-Q2WvI-l4X-5FOxbB0Y3ZBy5qfCKmYppNZ1uqC6NSFUTJdtATYZoxwS7VKBBgGy7hP7dEnq-g_2_zalvgb.mp4"
               alt="Colaboración con influencer"
               aspectRatio="4/5"
-              placeholder="Imagen de colaboración con influencer"
+              placeholder="Video de colaboración con influencer"
             />
           </ImageColumn>
         </ContentGrid>

@@ -23,6 +23,13 @@ export const ImageWrapper = styled.div`
   position: relative;
 `;
 
+export const VideoElement = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+`;
+
 export const Placeholder = styled.div`
   width: 100%;
   height: 100%;
