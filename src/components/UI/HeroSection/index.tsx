@@ -17,10 +17,6 @@ const HeroSection = () => {
   return (
     <Wrapper>
       <Inner>
-        <Pill>
-          <span>Inversión: $28,000 MXN</span>
-          <Image src={ic_chevron_right} alt="chevron-right" />
-        </Pill>
         <HeroTextContainer>
           {isMobile ? (
             <>
