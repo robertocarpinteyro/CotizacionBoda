@@ -54,7 +54,7 @@ const PaidMediaSection = () => {
         <ContentGrid>
           <LeftColumn>
             <BathtubImage
-              src=""
+              src="https://res.cloudinary.com/dwrtldhxd/image/upload/w_1200,q_auto,f_auto/v1765090919/Captura_de_pantalla_2025-12-07_010129_qoefat.png"
               alt="Meta Ads Dashboard"
               aspectRatio="16/10"
               placeholder="Dashboard de Meta Ads"

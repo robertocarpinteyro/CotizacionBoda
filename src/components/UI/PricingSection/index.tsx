@@ -42,7 +42,7 @@ const PricingSection = () => {
               <Price>$28,000</Price>
               <Period>MXN / mes</Period>
             </PriceTag>
-            <CTAButton>Comenzar Ahora</CTAButton>
+            <CTAButton as="a" href="mailto:contacto@cacomixtle.films">Comenzar Ahora</CTAButton>
           </LeftColumn>
           <RightColumn>
             <FeaturesList>
