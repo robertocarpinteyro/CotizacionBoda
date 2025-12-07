@@ -16,3 +16,4 @@ export { default as ContentPackageSection } from './UI/ContentPackageSection';
 export { default as PricingSection } from './UI/PricingSection';
 export { default as InfluencerSection } from './UI/InfluencerSection';
 export { default as BenefitsSection } from './UI/BenefitsSection';
+export { default as PaidMediaSection } from './UI/PaidMediaSection';

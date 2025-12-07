@@ -34,7 +34,9 @@ const HeroSection = () => {
             </>
           )}
         </HeroTextContainer>
-        <GetStartedButton padding="1rem 2rem">Ver Propuesta Completa</GetStartedButton>
+        <a href="#pricing" style={{ textDecoration: 'none' }}>
+          <GetStartedButton padding="1rem 2rem">Ver Inversión</GetStartedButton>
+        </a>
       </Inner>
     </Wrapper>
   );

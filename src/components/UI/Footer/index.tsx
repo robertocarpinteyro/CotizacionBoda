@@ -9,15 +9,27 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 const linksArr = [
   {
     title: 'Servicios',
-    links: ['Contenido Digital', 'Reels & Videos', 'Motion Graphics'],
+    links: [
+      { text: 'Contenido Digital', url: '#paquete' },
+      { text: 'Reels & Videos', url: '#paquete' },
+      { text: 'Motion Graphics', url: '#paquete' },
+    ],
   },
   {
     title: 'Información',
-    links: ['Sobre la Propuesta', 'Portafolio', 'Contacto'],
+    links: [
+      { text: 'Sobre la Propuesta', url: '#' },
+      { text: 'Portafolio', url: '#' },
+      { text: 'Contacto', url: 'mailto:contacto@cacomixtle.films' },
+    ],
   },
   {
     title: 'Redes Sociales',
-    links: ['Instagram', 'Facebook', 'LinkedIn'],
+    links: [
+      { text: 'Instagram', url: 'https://instagram.com' },
+      { text: 'Facebook', url: 'https://facebook.com' },
+      { text: 'LinkedIn', url: 'https://linkedin.com' },
+    ],
   },
 ];
 
@@ -44,7 +56,7 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <h2 style={{ color: 'white', fontSize: '2rem', fontWeight: '700' }}>ZENITH MOTORS</h2>
+          <h2 style={{ color: 'white', fontSize: '2rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h2>
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
@@ -60,7 +72,11 @@ const Footer = () => {
                   <h3>{l.title}</h3>
                   <LinksContainer>
                     {l.links.map((link, i) => (
-                      <li key={i}>{link}</li>
+                      <li key={i}>
+                        <a href={link.url} style={{ color: 'inherit', textDecoration: 'none' }}>
+                          {link.text}
+                        </a>
+                      </li>
                     ))}
                   </LinksContainer>
                 </GridColumn>

@@ -60,7 +60,7 @@ const contentItems = [
 
 const ContentPackageSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="paquete">
       <Container>
         <Header>
           <Title>Paquete de Contenido Mensual</Title>

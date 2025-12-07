@@ -31,7 +31,7 @@ const features = [
 
 const PricingSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="pricing">
       <Container>
         <ContentGrid>
           <LeftColumn>
