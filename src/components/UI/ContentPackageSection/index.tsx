@@ -37,11 +37,6 @@ const contentItems = [
     imageUrl: '',
   },
   {
-    title: 'Videos en Sucursal',
-    description: '3 videos mensuales de unidades por segmento, capturando interior y exterior en las instalaciones.',
-    imageUrl: '',
-  },
-  {
     title: 'Contenido con Influencer',
     description: 'Posibilidad de ejecutar videos con influencers destacando la colaboración entre marca, agencia y creador.',
     imageUrl: '',
@@ -64,7 +59,7 @@ const ContentPackageSection = () => {
       <Container>
         <Header>
           <Title>Paquete de Contenido Mensual</Title>
-          <Subtitle>8 Videos Distribuidos Estratégicamente</Subtitle>
+          <Subtitle>Contenido Estratégico para Redes Sociales</Subtitle>
         </Header>
         <Grid>
           {contentItems.map((item, index) => (
