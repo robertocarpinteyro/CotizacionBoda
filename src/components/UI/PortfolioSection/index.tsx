@@ -21,13 +21,15 @@ import {
 const portfolioVideos = [
   {
     title: 'Motion Graphics',
-    videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765080386/V3_1_qfg6xy.mp4',
-    type: 'autoplay',
+    videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.mp4',
+    thumbnailUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/so_0/q_auto,w_800,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.jpg',
+    type: 'modal',
   },
   {
     title: 'Color Grading Profesional',
     videoUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765080391/SECURITEReel1_ao3dg1.mp4',
-    type: 'autoplay',
+    thumbnailUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/so_0/q_auto,w_800,f_auto/v1765080391/SECURITEReel1_ao3dg1.jpg',
+    type: 'modal',
   },
   {
     title: 'Calidad Premium',
@@ -61,23 +63,14 @@ const PortfolioSection = () => {
         <VideoGrid>
           {portfolioVideos.map((video, index) => (
             <VideoCard key={index}>
-              {video.type === 'modal' ? (
-                <VideoThumbnail onClick={() => openModal(video.videoUrl)}>
-                  <img src={video.thumbnailUrl} alt={video.title} />
-                  <PlayButton>
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                      <path d="M16 12L34 24L16 36V12Z" fill="white"/>
-                    </svg>
-                  </PlayButton>
-                </VideoThumbnail>
-              ) : (
-                <BathtubImage
-                  src={video.videoUrl}
-                  alt={video.title}
-                  aspectRatio="9/16"
-                  objectFit="cover"
-                />
-              )}
+              <VideoThumbnail onClick={() => openModal(video.videoUrl)}>
+                <img src={video.thumbnailUrl} alt={video.title} />
+                <PlayButton>
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <path d="M16 12L34 24L16 36V12Z" fill="white"/>
+                  </svg>
+                </PlayButton>
+              </VideoThumbnail>
               <VideoTitle>{video.title}</VideoTitle>
             </VideoCard>
           ))}

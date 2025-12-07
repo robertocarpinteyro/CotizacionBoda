@@ -34,22 +34,12 @@ const contentItems = [
   {
     title: 'Motion Graphics',
     description: '2 motion graphics promocionales con animaciones profesionales para destacar ofertas y promociones.',
-    imageUrl: '',
-  },
-  {
-    title: 'Contenido con Influencer',
-    description: 'Posibilidad de ejecutar videos con influencers destacando la colaboración entre marca, agencia y creador.',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_800,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.mp4',
   },
   {
     title: 'Sesión de Fotos',
     description: 'Sesión fotográfica para posts y stories con influencer, con posibilidad de colaborar con Stylish.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06441_qfi4c5.jpg',
-  },
-  {
-    title: 'Triple Comunidad',
-    description: 'Potenciación de visualización juntando 3 grandes comunidades: marca, agencia de autos e influencer.',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765086086/vlcsnap-2025-12-06-23h40m04s817_lahlyo.png',
   },
 ];
 
