@@ -21,8 +21,8 @@ import {
 const benefits = [
   {
     icon: '👥',
-    title: 'Triple Alcance',
-    description: 'Combinamos 3 comunidades: Zenith Motors, marca de autos e influencer para maximizar la visibilidad.',
+    title: 'Doble Alcance',
+    description: 'Combinamos 2 comunidades: tu marca e influencer para maximizar la visibilidad.',
   },
   {
     icon: '📸',
@@ -63,8 +63,7 @@ const InfluencerSection = () => {
             <HighlightBox>
               <HighlightText>
                 Los videos tienen la posibilidad de ejecutarse con influencer, destacando la colaboración
-                entre la marca (agencia), marca de auto e influencer como marca, potenciando la
-                visualización del contenido.
+                entre tu marca e influencer, potenciando la visualización del contenido.
               </HighlightText>
             </HighlightBox>
           </TextColumn>

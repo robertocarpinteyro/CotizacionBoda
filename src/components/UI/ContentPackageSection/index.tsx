@@ -18,17 +18,17 @@ import {
 const contentItems = [
   {
     title: 'Reels de Festividades',
-    description: '2 reels mensuales de festividades o actividades en sucursal, incluyendo promociones especiales.',
+    description: '2 reels mensuales de festividades o actividades especiales, incluyendo promociones.',
     imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765089339/Gemini_Generated_Image_xo55bpxo55bpxo55_khuavb.png',
   },
   {
-    title: 'Reels por Auto Agencia',
-    description: '3 reels destacando los diferentes vehículos disponibles en la agencia.',
+    title: 'Reels de Productos/Servicios',
+    description: '3 reels destacando tus productos o servicios de manera creativa y atractiva.',
     imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06477_fzuo6v.jpg',
   },
   {
     title: 'Reels Cinematográficos',
-    description: '3 reels cinematográficos por unidad, capturados en spots instagrameables de la ciudad durante el recorrido.',
+    description: '3 reels cinematográficos capturados en spots instagrameables de la ciudad durante el recorrido.',
     imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080931/DSC01193_eevl9p.jpg',
   },
   {

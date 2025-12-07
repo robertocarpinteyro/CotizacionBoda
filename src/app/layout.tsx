@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Propuesta Redes Sociales - Cacomixtle Films',
-  description: 'Propuesta de contenido digital para Zenith Motors',
+  description: 'Propuesta de contenido digital para Vecsa',
 };
 
 export default function RootLayout({

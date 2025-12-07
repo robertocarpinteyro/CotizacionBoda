@@ -21,17 +21,17 @@ export const faqData: FAQItem[] = [
   {
     question: '¿Qué incluye el paquete de contenido mensual?',
     answer:
-      'El paquete incluye 8 videos distribuidos estratégicamente: 2 reels de festividades/actividades en sucursal, 3 reels por auto agencia, 3 reels cinematográficos en spots instagrameables, 2 motion graphics promocionales, sesión de fotos para posts y stories, y la posibilidad de colaboraciones con influencers.',
+      'El paquete incluye 8 videos distribuidos estratégicamente: 2 reels de festividades/actividades, 3 reels destacando productos/servicios, 3 reels cinematográficos en spots instagrameables, 2 motion graphics promocionales, sesión de fotos para posts y stories, y la posibilidad de colaboraciones con influencers.',
   },
   {
     question: '¿Cómo funcionan las colaboraciones con influencers?',
     answer:
-      'Los videos tienen la posibilidad de ejecutarse con influencers, destacando la colaboración entre la marca (agencia), marca de auto e influencer. Esto potencia la visualización del contenido juntando 3 grandes comunidades. Incluye sesión de fotos para posts y stories con posibilidad de colaborar con creadores como Stylist.',
+      'Los videos tienen la posibilidad de ejecutarse con influencers, destacando la colaboración entre tu marca e influencer. Esto potencia la visualización del contenido juntando grandes comunidades. Incluye sesión de fotos para posts y stories con posibilidad de colaborar con creadores como Stylist.',
   },
   {
     question: '¿Dónde se graban los reels cinematográficos?',
     answer:
-      'Los reels cinematográficos se graban en spots instagrameables de la ciudad, capturando momentos durante el recorrido así como en las locaciones seleccionadas. La idea es mostrar los vehículos en los mejores escenarios urbanos para contenido premium.',
+      'Los reels cinematográficos se graban en spots instagrameables de la ciudad, capturando momentos durante el recorrido así como en las locaciones seleccionadas. La idea es mostrar tu marca en los mejores escenarios urbanos para contenido premium.',
   },
   {
     question: '¿Cuál es el tiempo de entrega del contenido?',
