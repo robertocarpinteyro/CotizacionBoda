@@ -2,6 +2,7 @@ import {
   HeroSection,
   ContentPackageSection,
   BenefitsSection,
+  PortfolioSection,
   InfluencerSection,
   PaidMediaSection,
   PricingSection,
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <ContentPackageSection />
       <BenefitsSection />
+      <PortfolioSection />
       <InfluencerSection />
       <PaidMediaSection />
       <PricingSection />

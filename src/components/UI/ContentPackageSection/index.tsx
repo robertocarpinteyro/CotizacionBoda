@@ -24,12 +24,12 @@ const contentItems = [
   {
     title: 'Reels por Auto Agencia',
     description: '3 reels destacando los diferentes vehículos disponibles en la agencia.',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06477_fzuo6v.jpg',
   },
   {
     title: 'Reels Cinematográficos',
     description: '3 reels cinematográficos por unidad, capturados en spots instagrameables de la ciudad durante el recorrido.',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080931/DSC01193_eevl9p.jpg',
   },
   {
     title: 'Motion Graphics',
@@ -44,7 +44,7 @@ const contentItems = [
   {
     title: 'Sesión de Fotos',
     description: 'Sesión fotográfica para posts y stories con influencer, con posibilidad de colaborar con Stylish.',
-    imageUrl: '',
+    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06441_qfi4c5.jpg',
   },
   {
     title: 'Triple Comunidad',
