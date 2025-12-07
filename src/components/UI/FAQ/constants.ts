@@ -26,7 +26,7 @@ export const faqData: FAQItem[] = [
   {
     question: '¿Cómo funcionan las colaboraciones con influencers?',
     answer:
-      'Los videos tienen la posibilidad de ejecutarse con influencers, destacando la colaboración entre la marca (agencia), marca de auto e influencer. Esto potencia la visualización del contenido juntando 3 grandes comunidades. Incluye sesión de fotos para posts y stories con posibilidad de colaborar con creadores como Stylish.',
+      'Los videos tienen la posibilidad de ejecutarse con influencers, destacando la colaboración entre la marca (agencia), marca de auto e influencer. Esto potencia la visualización del contenido juntando 3 grandes comunidades. Incluye sesión de fotos para posts y stories con posibilidad de colaborar con creadores como Stylist.',
   },
   {
     question: '¿Dónde se graban los reels cinematográficos?',

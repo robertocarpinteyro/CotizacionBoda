@@ -36,8 +36,8 @@ const benefits = [
   },
   {
     icon: '✨',
-    title: 'Posibilidad con Stylish',
-    description: 'Oportunidad de colaborar con creadores destacados como Stylish para mayor impacto.',
+    title: 'Posibilidad con Stylist',
+    description: 'Oportunidad de colaborar con creadores destacados como Stylist para mayor impacto.',
   },
 ];
 

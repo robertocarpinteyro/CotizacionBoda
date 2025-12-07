@@ -38,7 +38,7 @@ const contentItems = [
   },
   {
     title: 'Sesión de Fotos',
-    description: 'Sesión fotográfica para posts y stories con influencer, con posibilidad de colaborar con Stylish.',
+    description: 'Sesión fotográfica para posts y stories con influencer, con posibilidad de colaborar con Stylist.',
     imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765086086/vlcsnap-2025-12-06-23h40m04s817_lahlyo.png',
   },
 ];
