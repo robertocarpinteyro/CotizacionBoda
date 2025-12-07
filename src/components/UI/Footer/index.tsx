@@ -8,16 +8,16 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
 const linksArr = [
   {
-    title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    title: 'Servicios',
+    links: ['Contenido Digital', 'Reels & Videos', 'Motion Graphics'],
   },
   {
-    title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
+    title: 'Información',
+    links: ['Sobre la Propuesta', 'Portafolio', 'Contacto'],
   },
   {
-    title: 'About us',
-    links: ['Contact us', 'FAQ'],
+    title: 'Redes Sociales',
+    links: ['Instagram', 'Facebook', 'LinkedIn'],
   },
 ];
 
@@ -44,20 +44,14 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <h2 style={{ color: 'white', fontSize: '2rem', fontWeight: '700' }}>ZENITH MOTORS</h2>
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
             <QRContainer>
-              <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
-              </QRImageCtn>
               <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
-                <IconCtn>
-                  <Image src={ic_google_playstore} alt="playstore icon" />
-                  <Image src={ic_baseline_apple} alt="apple icon" />
-                </IconCtn>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>¿Listo para impulsar tu presencia digital?</h3>
+                <p>Contáctanos para conocer más sobre nuestra propuesta de contenido para Zenith Motors.</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -75,12 +69,11 @@ const Footer = () => {
           </FooterMiddle>
           <FooterBottom>
             <Translator>
-              <h3>English (United Kingdom)</h3>
-              <Image src={ic_chevron_down} alt="chevron down" />
+              <h3>Español (México)</h3>
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              2024 Propuesta Zenith Motors. Todos los derechos reservados.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

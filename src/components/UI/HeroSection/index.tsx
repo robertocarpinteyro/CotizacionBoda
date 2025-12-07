@@ -18,7 +18,7 @@ const HeroSection = () => {
     <Wrapper>
       <Inner>
         <Pill>
-          <span>Introducing Raft cards</span>
+          <span>Inversión: $28,000 MXN</span>
           <Image src={ic_chevron_right} alt="chevron-right" />
         </Pill>
         <HeroTextContainer>
@@ -34,7 +34,7 @@ const HeroSection = () => {
             </>
           )}
         </HeroTextContainer>
-        <GetStartedButton padding="1rem 2rem" />
+        <GetStartedButton padding="1rem 2rem">Ver Propuesta Completa</GetStartedButton>
       </Inner>
     </Wrapper>
   );

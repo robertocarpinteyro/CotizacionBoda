@@ -24,7 +24,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="raft_logo" priority />
+          <h1 style={{ color: 'white', fontSize: '1.5rem', fontWeight: '700' }}>ZENITH MOTORS</h1>
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}
@@ -40,8 +40,8 @@ const Header = () => {
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
-          <AnimatedLink title="Login" />
-          <GetStartedButton padding="0.5rem 0.75rem" />
+          <AnimatedLink title="Contacto" />
+          <GetStartedButton padding="0.5rem 0.75rem">Solicitar Propuesta</GetStartedButton>
         </CallToActions>
       </Inner>
     </Wrapper>

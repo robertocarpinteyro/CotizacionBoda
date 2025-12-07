@@ -3,8 +3,8 @@ type FAQItem = {
   answer: string;
 };
 
-export const desktopHeaderPhrase = ['Frequently asked', 'questions'];
-export const mobileHeaderPhrase = ['Frequently', 'asked', 'questions'];
+export const desktopHeaderPhrase = ['Preguntas', 'frecuentes'];
+export const mobileHeaderPhrase = ['Preguntas', 'frecuentes'];
 export const animate = {
   initial: {
     y: '100%',
@@ -19,23 +19,28 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: 'How do I create an account with RAFT?',
+    question: '¿Qué incluye el paquete de contenido mensual?',
     answer:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      'El paquete incluye 8 videos distribuidos estratégicamente: 2 reels de festividades/actividades en sucursal, 3 reels por auto agencia, 3 reels cinematográficos en spots instagrameables, 2 motion graphics promocionales, sesión de fotos para posts y stories, y la posibilidad de colaboraciones con influencers.',
   },
   {
-    question: 'How does RAFT ensure the security of my financial data?',
+    question: '¿Cómo funcionan las colaboraciones con influencers?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Los videos tienen la posibilidad de ejecutarse con influencers, destacando la colaboración entre la marca (agencia), marca de auto e influencer. Esto potencia la visualización del contenido juntando 3 grandes comunidades. Incluye sesión de fotos para posts y stories con posibilidad de colaborar con creadores como Stylish.',
   },
   {
-    question: 'What types of transactions can I perform with RAFT?',
+    question: '¿Dónde se graban los reels cinematográficos?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Los reels cinematográficos se graban en spots instagrameables de la ciudad, capturando momentos durante el recorrido así como en las locaciones seleccionadas. La idea es mostrar los vehículos en los mejores escenarios urbanos para contenido premium.',
   },
   {
-    question: 'What benefits does RAFT offer for wealth management?',
+    question: '¿Cuál es el tiempo de entrega del contenido?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'El contenido se distribuye a lo largo del mes de manera estratégica. Los 8 videos se entregan según el calendario acordado para mantener una presencia constante en redes sociales y maximizar el engagement con tu audiencia.',
+  },
+  {
+    question: '¿El contenido está optimizado para Instagram?',
+    answer:
+      'Sí, todo el contenido está diseñado específicamente para Instagram y redes sociales. Los reels están en formato vertical, los motion graphics son dinámicos y atractivos, y las fotos están optimizadas para posts y stories con la mejor calidad visual.',
   },
 ];
