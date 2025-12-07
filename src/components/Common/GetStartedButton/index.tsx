@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import { LinkTo } from './styles';
 
-const GetStartedButton = ({ padding }: { padding: string }) => {
+interface GetStartedButtonProps {
+  padding: string;
+  children?: React.ReactNode;
+}
+
+const GetStartedButton = ({ padding, children }: GetStartedButtonProps) => {
   return (
     <LinkTo
       style={{
@@ -9,7 +14,7 @@ const GetStartedButton = ({ padding }: { padding: string }) => {
       }}
       href="/"
     >
-      Get Started
+      {children || 'Get Started'}
     </LinkTo>
   );
 };
