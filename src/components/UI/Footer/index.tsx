@@ -23,14 +23,6 @@ const linksArr = [
       { text: 'Contacto', url: 'mailto:contacto@cacomixtle.films' },
     ],
   },
-  {
-    title: 'Redes Sociales',
-    links: [
-      { text: 'Instagram', url: 'https://instagram.com' },
-      { text: 'Facebook', url: 'https://facebook.com' },
-      { text: 'LinkedIn', url: 'https://linkedin.com' },
-    ],
-  },
 ];
 
 import {
