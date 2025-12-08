@@ -30,9 +30,7 @@ const HeroSection = () => {
             </>
           )}
         </HeroTextContainer>
-        <a href="#pricing" style={{ textDecoration: 'none' }}>
-          <GetStartedButton padding="1rem 2rem">Ver Inversión</GetStartedButton>
-        </a>
+        <GetStartedButton padding="1rem 2rem" href="#pricing">Ver Inversión</GetStartedButton>
       </Inner>
     </Wrapper>
   );
