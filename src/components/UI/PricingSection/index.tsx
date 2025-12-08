@@ -42,7 +42,7 @@ const PricingSection = () => {
               <Price>$28,000</Price>
               <Period>MXN / mes</Period>
             </PriceTag>
-            <CTAButton as="a" href="mailto:contacto@cacomixtle.films">Comenzar Ahora</CTAButton>
+            <CTAButton as="a" href="https://wa.me/52222172882?text=Me%20interesa%20la%20propuesta%20de%20Zenith" target="_blank" rel="noopener noreferrer">Comenzar Ahora</CTAButton>
           </LeftColumn>
           <RightColumn>
             <FeaturesList>
