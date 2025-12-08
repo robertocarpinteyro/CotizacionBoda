@@ -43,4 +43,9 @@ export const faqData: FAQItem[] = [
     answer:
       'Sí, todo el contenido está diseñado específicamente para redes sociales. Los reels están en formato vertical, los motion graphics son dinámicos y atractivos, y las fotos están optimizadas para posts y stories con la mejor calidad visual.',
   },
+  {
+    question: '¿La inversión incluye el presupuesto de pauta publicitaria?',
+    answer:
+      'No, el presupuesto de pauta publicitaria para Meta Ads no está incluido en la inversión mensual. Nosotros diseñamos y gestionamos las campañas publicitarias, y te sugerimos una cantidad óptima de inversión en pauta que consideramos adecuada para alcanzar tus objetivos y maximizar resultados.',
+  },
 ];
