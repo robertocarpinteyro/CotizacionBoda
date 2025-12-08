@@ -18,8 +18,8 @@ const benefits = [
   },
   {
     icon: '📱',
-    title: 'Optimizado para Instagram',
-    description: 'Todo el contenido está diseñado específicamente para maximizar el engagement en Instagram.',
+    title: 'Optimizado para Redes Sociales',
+    description: 'Todo el contenido está diseñado específicamente para maximizar el engagement en redes sociales.',
   },
   {
     icon: '🎨',
