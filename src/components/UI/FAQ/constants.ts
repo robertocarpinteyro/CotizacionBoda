@@ -39,8 +39,8 @@ export const faqData: FAQItem[] = [
       'El contenido se distribuye a lo largo del mes de manera estratégica. Los 8 videos se entregan según el calendario acordado para mantener una presencia constante en redes sociales y maximizar el engagement con tu audiencia.',
   },
   {
-    question: '¿El contenido está optimizado para Instagram?',
+    question: '¿El contenido está optimizado para redes sociales?',
     answer:
-      'Sí, todo el contenido está diseñado específicamente para Instagram y redes sociales. Los reels están en formato vertical, los motion graphics son dinámicos y atractivos, y las fotos están optimizadas para posts y stories con la mejor calidad visual.',
+      'Sí, todo el contenido está diseñado específicamente para redes sociales. Los reels están en formato vertical, los motion graphics son dinámicos y atractivos, y las fotos están optimizadas para posts y stories con la mejor calidad visual.',
   },
 ];

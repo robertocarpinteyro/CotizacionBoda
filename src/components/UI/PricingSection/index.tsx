@@ -26,7 +26,7 @@ const features = [
   'Sesión de fotos para posts y stories',
   'Posibilidad de colaboración con influencers',
   'Potenciación de 2 comunidades (tu marca + influencer)',
-  'Contenido optimizado para Instagram y redes sociales',
+  'Contenido optimizado para redes sociales',
 ];
 
 const PricingSection = () => {
