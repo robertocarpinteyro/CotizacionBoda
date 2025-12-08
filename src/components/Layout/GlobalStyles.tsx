@@ -22,6 +22,10 @@ export const GlobalStyles = styled.createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   html,
   body {
     max-width: 100vw;
@@ -29,7 +33,6 @@ export const GlobalStyles = styled.createGlobalStyle`
     font-family: 'SF Pro Display', sans-serif;
     background-color: var(--Background);
     color: var(--black);
-    scroll-snap-type: y mandatory;
 
     &::-webkit-scrollbar {
       width: 0.5rem;
