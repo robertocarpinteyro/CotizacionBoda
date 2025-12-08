@@ -22,10 +22,6 @@ export const GlobalStyles = styled.createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   html,
   body {
     max-width: 100vw;
