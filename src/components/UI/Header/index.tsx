@@ -24,25 +24,8 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="raft_logo" priority />
-          <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
-            <motion.div
-              variants={menu}
-              animate={isOpen ? 'open' : 'closed'}
-              initial="closed"
-            ></motion.div>
-            <Image src={ic_bars} alt="bars" />
-          </BurgerMenu>
+          <h1 style={{ color: 'white', fontSize: '1.5rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h1>
         </LogoContainer>
-        <Nav className={isOpen ? 'active' : ''}>
-          {links.map((link, i) => (
-            <AnimatedLink key={i} title={link.linkTo} />
-          ))}
-        </Nav>
-        <CallToActions className={isOpen ? 'active' : ''}>
-          <AnimatedLink title="Login" />
-          <GetStartedButton padding="0.5rem 0.75rem" />
-        </CallToActions>
       </Inner>
     </Wrapper>
   );

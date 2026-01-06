@@ -17,10 +17,6 @@ const HeroSection = () => {
   return (
     <Wrapper>
       <Inner>
-        <Pill>
-          <span>Introducing Raft cards</span>
-          <Image src={ic_chevron_right} alt="chevron-right" />
-        </Pill>
         <HeroTextContainer>
           {isMobile ? (
             <>
@@ -34,7 +30,7 @@ const HeroSection = () => {
             </>
           )}
         </HeroTextContainer>
-        <GetStartedButton padding="1rem 2rem" />
+        <GetStartedButton padding="1rem 2rem" href="#pricing">Ver Inversión</GetStartedButton>
       </Inner>
     </Wrapper>
   );

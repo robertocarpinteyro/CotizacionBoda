@@ -1,24 +1,24 @@
 import {
-  FAQ,
-  Featured,
-  FinancialFuture,
-  FinancilaFreedom,
   HeroSection,
-  IntroSection,
-  JoinSection,
-  OffersSection,
+  ContentPackageSection,
+  BenefitsSection,
+  PortfolioSection,
+  InfluencerSection,
+  PaidMediaSection,
+  PricingSection,
+  FAQ,
 } from '@/components';
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <Featured />
-      <OffersSection />
-      <FinancilaFreedom />
-      <FinancialFuture />
-      <IntroSection />
-      <JoinSection />
+      <ContentPackageSection />
+      <BenefitsSection />
+      <PortfolioSection />
+      <InfluencerSection />
+      <PaidMediaSection />
+      <PricingSection />
       <FAQ />
     </main>
   );

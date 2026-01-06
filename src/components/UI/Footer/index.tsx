@@ -8,16 +8,20 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
 const linksArr = [
   {
-    title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    title: 'Servicios',
+    links: [
+      { text: 'Contenido Digital', url: '#paquete' },
+      { text: 'Reels & Videos', url: '#paquete' },
+      { text: 'Motion Graphics', url: '#paquete' },
+    ],
   },
   {
-    title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
-  },
-  {
-    title: 'About us',
-    links: ['Contact us', 'FAQ'],
+    title: 'Información',
+    links: [
+      { text: 'Sobre la Propuesta', url: '#' },
+      { text: 'Portafolio', url: '#' },
+      { text: 'Contacto', url: 'mailto:contacto@cacomixtle.films' },
+    ],
   },
 ];
 
@@ -44,20 +48,14 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <h2 style={{ color: 'white', fontSize: '2rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h2>
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
             <QRContainer>
-              <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
-              </QRImageCtn>
               <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
-                <IconCtn>
-                  <Image src={ic_google_playstore} alt="playstore icon" />
-                  <Image src={ic_baseline_apple} alt="apple icon" />
-                </IconCtn>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>¿Listo para impulsar tu presencia digital?</h3>
+                <p>Contáctanos para conocer más sobre nuestra propuesta de contenido para Zenith Motors.</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -66,7 +64,11 @@ const Footer = () => {
                   <h3>{l.title}</h3>
                   <LinksContainer>
                     {l.links.map((link, i) => (
-                      <li key={i}>{link}</li>
+                      <li key={i}>
+                        <a href={link.url} style={{ color: 'inherit', textDecoration: 'none' }}>
+                          {link.text}
+                        </a>
+                      </li>
                     ))}
                   </LinksContainer>
                 </GridColumn>
@@ -75,12 +77,11 @@ const Footer = () => {
           </FooterMiddle>
           <FooterBottom>
             <Translator>
-              <h3>English (United Kingdom)</h3>
-              <Image src={ic_chevron_down} alt="chevron down" />
+              <h3>Español (México)</h3>
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              2024 Propuesta Zenith Motors. Todos los derechos reservados.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>
