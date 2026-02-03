@@ -39,7 +39,7 @@ const PricingSection = () => {
               Inversión en tu <Highlight>Presencia Digital</Highlight>
             </Title>
             <PriceTag>
-              <Price>$28,000</Price>
+              <Price>$7,000</Price>
               <Period>MXN / mes</Period>
             </PriceTag>
             <CTAButton as="a" href="https://wa.me/52222172882?text=Me%20interesa%20la%20propuesta%20de%20Oasis%20Creativa" target="_blank" rel="noopener noreferrer">Comenzar Ahora</CTAButton>

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Wrapper,
   Container,
@@ -10,10 +10,6 @@ import {
   VideoCard,
   VideoThumbnail,
   PlayButton,
-  Modal,
-  ModalContent,
-  CloseButton,
-  ModalVideo,
   FeaturesGrid,
   FeatureCard,
   FeatureIcon,
@@ -58,19 +54,6 @@ const features = [
 ];
 
 const AutoReelsSection = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [currentVideo, setCurrentVideo] = useState('');
-
-  const openModal = (videoUrl: string) => {
-    setCurrentVideo(videoUrl);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-    setCurrentVideo('');
-  };
-
   return (
     <Wrapper>
       <Container>
@@ -81,10 +64,18 @@ const AutoReelsSection = () => {
         <VideoGrid>
           {autoVideos.map((video, index) => (
             <VideoCard key={index}>
-              <VideoThumbnail onClick={() => openModal(video.videoUrl)}>
+              <VideoThumbnail as="a" href={video.videoUrl} target="_blank" rel="noopener noreferrer">
                 <video
                   src={video.videoUrl}
                   poster={video.thumbnailUrl}
+                  muted
+                  loop
+                  playsInline
+                  onMouseEnter={(e) => e.currentTarget.play()}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.pause();
+                    e.currentTarget.currentTime = 0;
+                  }}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
                 <PlayButton>
@@ -107,21 +98,6 @@ const AutoReelsSection = () => {
           ))}
         </FeaturesGrid>
       </Container>
-
-      {modalOpen && (
-        <Modal onClick={closeModal}>
-          <ModalContent onClick={(e) => e.stopPropagation()}>
-            <CloseButton onClick={closeModal}>×</CloseButton>
-            <ModalVideo
-              autoPlay
-              controls
-              playsInline
-            >
-              <source src={currentVideo} type="video/mp4" />
-            </ModalVideo>
-          </ModalContent>
-        </Modal>
-      )}
     </Wrapper>
   );
 };
