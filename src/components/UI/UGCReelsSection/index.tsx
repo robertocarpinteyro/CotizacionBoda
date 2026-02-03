@@ -76,7 +76,7 @@ const UGCReelsSection = () => {
       <Container>
         <Header>
           <Title>Reels UGC</Title>
-          <Subtitle>Grabamos con actores o talentos en sucursal videos "orgánicos" (UGC) trends</Subtitle>
+          <Subtitle>Grabamos con actores o talentos en sucursal videos &ldquo;orgánicos&rdquo; (UGC) trends</Subtitle>
         </Header>
         <VideoGrid>
           {ugcVideos.map((video, index) => (

@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import BathtubImage from '@/components/Common/BathtubImage';
 import {
   Wrapper,
@@ -64,7 +65,12 @@ const PortfolioSection = () => {
           {portfolioVideos.map((video, index) => (
             <VideoCard key={index}>
               <VideoThumbnail onClick={() => openModal(video.videoUrl)}>
-                <img src={video.thumbnailUrl} alt={video.title} />
+                <Image
+                  src={video.thumbnailUrl}
+                  alt={video.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
                 <PlayButton>
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <path d="M16 12L34 24L16 36V12Z" fill="white"/>
