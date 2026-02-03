@@ -19,9 +19,11 @@ import {
 } from './styles';
 
 const features = [
-  '6 videos mensuales distribuidos estratégicamente',
+  '6 reels mensuales distribuidos estratégicamente',
   '3 reels de auto con presentación de ficha técnica',
   '3 reels UGC con actores/talentos (puede incluir influencers)',
+  '2 motion graphics promocionales',
+  'Sesión de fotos para posts y stories',
   'Grabación en sucursal con contenido orgánico siguiendo tendencias',
   'Potenciación de 2 comunidades (tu marca + talento/influencer)',
   'Contenido optimizado para redes sociales',

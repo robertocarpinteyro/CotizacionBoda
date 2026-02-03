@@ -3,7 +3,8 @@ import {
   ContentPackageSection,
   BenefitsSection,
   PortfolioSection,
-  InfluencerSection,
+  UGCReelsSection,
+  AutoReelsSection,
   PaidMediaSection,
   PricingSection,
   FAQ,
@@ -16,7 +17,8 @@ export default function Home() {
       <ContentPackageSection />
       <BenefitsSection />
       <PortfolioSection />
-      <InfluencerSection />
+      <UGCReelsSection />
+      <AutoReelsSection />
       <PaidMediaSection />
       <PricingSection />
       <FAQ />

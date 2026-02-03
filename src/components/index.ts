@@ -18,3 +18,5 @@ export { default as InfluencerSection } from './UI/InfluencerSection';
 export { default as BenefitsSection } from './UI/BenefitsSection';
 export { default as PaidMediaSection } from './UI/PaidMediaSection';
 export { default as PortfolioSection } from './UI/PortfolioSection';
+export { default as UGCReelsSection } from './UI/UGCReelsSection';
+export { default as AutoReelsSection } from './UI/AutoReelsSection';
