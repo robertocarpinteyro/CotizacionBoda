@@ -21,27 +21,27 @@ export const faqData: FAQItem[] = [
   {
     question: '¿Qué incluye el paquete de contenido mensual?',
     answer:
-      'El paquete incluye 8 videos distribuidos estratégicamente: 2 reels de festividades/actividades en sucursal, 3 reels por auto agencia, 3 reels cinematográficos en spots instagrameables, 2 motion graphics promocionales, sesión de fotos para posts y stories, y la posibilidad de colaboraciones con influencers.',
+      'El paquete incluye 6 reels mensuales distribuidos estratégicamente: 3 reels de auto con presentación de ficha técnica y 3 reels UGC grabados en sucursal con actores, talentos o influencers siguiendo las tendencias actuales de redes sociales.',
   },
   {
-    question: '¿Cómo funcionan las colaboraciones con influencers?',
+    question: '¿Cómo funcionan las colaboraciones con actores/talentos?',
     answer:
-      'Los videos tienen la posibilidad de ejecutarse con influencers, destacando la colaboración entre la marca (agencia), marca de auto e influencer. Esto potencia la visualización del contenido juntando 3 grandes comunidades. Incluye sesión de fotos para posts y stories con posibilidad de colaborar con creadores como Stylist.',
+      'Los reels UGC se graban en tu sucursal con actores, talentos o influencers, creando contenido orgánico y auténtico que sigue las tendencias actuales. Esto potencia la visualización juntando 2 comunidades: tu marca y el talento/influencer colaborador.',
   },
   {
-    question: '¿Dónde se graban los reels cinematográficos?',
+    question: '¿Dónde se graban los reels UGC?',
     answer:
-      'Los reels cinematográficos se graban en spots instagrameables de la ciudad, capturando momentos durante el recorrido así como en las locaciones seleccionadas. La idea es mostrar los vehículos en los mejores escenarios urbanos para contenido premium.',
+      'Los reels UGC se graban directamente en tu sucursal con actores, talentos o influencers, creando contenido auténtico y orgánico que genera mayor conexión con tu audiencia y sigue las tendencias del momento.',
   },
   {
     question: '¿Cuál es el tiempo de entrega del contenido?',
     answer:
-      'El contenido se distribuye a lo largo del mes de manera estratégica. Los 8 videos se entregan según el calendario acordado para mantener una presencia constante en redes sociales y maximizar el engagement con tu audiencia.',
+      'El contenido se distribuye a lo largo del mes de manera estratégica. Los 6 reels se entregan según el calendario acordado para mantener una presencia constante en redes sociales y maximizar el engagement con tu audiencia.',
   },
   {
     question: '¿El contenido está optimizado para redes sociales?',
     answer:
-      'Sí, todo el contenido está diseñado específicamente para redes sociales. Los reels están en formato vertical, los motion graphics son dinámicos y atractivos, y las fotos están optimizadas para posts y stories con la mejor calidad visual.',
+      'Sí, todo el contenido está diseñado específicamente para redes sociales. Los reels están en formato vertical optimizado para Instagram y TikTok, con la mejor calidad visual y siguiendo las tendencias actuales para maximizar alcance y engagement.',
   },
   {
     question: '¿La inversión incluye el presupuesto de pauta publicitaria?',

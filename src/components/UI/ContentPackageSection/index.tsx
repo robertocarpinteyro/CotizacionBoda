@@ -17,29 +17,14 @@ import {
 
 const contentItems = [
   {
-    title: 'Reels de Festividades',
-    description: '2 reels mensuales de festividades o actividades en sucursal, incluyendo promociones especiales.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765089339/Gemini_Generated_Image_xo55bpxo55bpxo55_khuavb.png',
-  },
-  {
-    title: 'Reels por Auto Agencia',
-    description: '3 reels destacando los diferentes vehículos disponibles en la agencia.',
+    title: 'Reels de Auto (Ficha Técnica)',
+    description: '3 reels mensuales destacando las unidades en venta con presentación de ficha técnica.',
     imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06477_fzuo6v.jpg',
   },
   {
-    title: 'Reels Cinematográficos',
-    description: '3 reels cinematográficos por unidad, capturados en spots instagrameables de la ciudad durante el recorrido.',
+    title: 'Reels UGC con Actor/Talento',
+    description: '3 reels orgánicos grabados en sucursal con actores, talentos o influencers siguiendo tendencias.',
     imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080931/DSC01193_eevl9p.jpg',
-  },
-  {
-    title: 'Motion Graphics',
-    description: '2 motion graphics promocionales con animaciones profesionales para destacar ofertas y promociones.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_800,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.mp4',
-  },
-  {
-    title: 'Sesión de Fotos',
-    description: 'Sesión fotográfica para posts y stories con influencer, con posibilidad de colaborar con Stylist.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765086086/vlcsnap-2025-12-06-23h40m04s817_lahlyo.png',
   },
 ];
 

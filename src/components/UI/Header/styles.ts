@@ -4,7 +4,8 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
   padding: 1rem 0;
-  border-bottom: 0.5px solid #3d3d3d;
+  background-color: var(--blue);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 
   @media (max-width: 768px) {
     padding: 0.75rem 0;

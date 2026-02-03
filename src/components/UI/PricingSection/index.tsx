@@ -19,13 +19,11 @@ import {
 } from './styles';
 
 const features = [
-  '8 videos mensuales distribuidos estratégicamente',
-  '2 reels de festividades y actividades en sucursal',
-  '6 reels de vehículos (3 por agencia + 3 cinematográficos)',
-  '2 motion graphics promocionales',
-  'Sesión de fotos para posts y stories',
-  'Posibilidad de colaboración con influencers',
-  'Potenciación de 3 comunidades (marca + agencia + influencer)',
+  '6 videos mensuales distribuidos estratégicamente',
+  '3 reels de auto con presentación de ficha técnica',
+  '3 reels UGC con actores/talentos (puede incluir influencers)',
+  'Grabación en sucursal con contenido orgánico siguiendo tendencias',
+  'Potenciación de 2 comunidades (tu marca + talento/influencer)',
   'Contenido optimizado para redes sociales',
 ];
 
@@ -42,7 +40,7 @@ const PricingSection = () => {
               <Price>$28,000</Price>
               <Period>MXN / mes</Period>
             </PriceTag>
-            <CTAButton as="a" href="https://wa.me/52222172882?text=Me%20interesa%20la%20propuesta%20de%20Zenith" target="_blank" rel="noopener noreferrer">Comenzar Ahora</CTAButton>
+            <CTAButton as="a" href="https://wa.me/52222172882?text=Me%20interesa%20la%20propuesta%20de%20Oasis%20Creativa" target="_blank" rel="noopener noreferrer">Comenzar Ahora</CTAButton>
           </LeftColumn>
           <RightColumn>
             <FeaturesList>

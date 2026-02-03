@@ -21,23 +21,23 @@ import {
 const benefits = [
   {
     icon: '👥',
-    title: 'Triple Alcance',
-    description: 'Combinamos 3 comunidades: Zenith Motors, marca de autos e influencer para maximizar la visibilidad.',
-  },
-  {
-    icon: '📸',
-    title: 'Sesión Profesional',
-    description: 'Sesión de fotos en exteriores con influencer para posts y stories de alta calidad.',
+    title: 'Doble Alcance',
+    description: 'Combinamos 2 comunidades: tu marca y el talento/influencer para maximizar la visibilidad.',
   },
   {
     icon: '🎬',
     title: 'Contenido Auténtico',
-    description: 'Videos genuinos que conectan con la audiencia y generan confianza en tu marca.',
+    description: 'Videos UGC genuinos grabados en sucursal que conectan con la audiencia y generan confianza.',
   },
   {
-    icon: '✨',
-    title: 'Posibilidad con Stylist',
-    description: 'Oportunidad de colaborar con creadores destacados como Stylist para mayor impacto.',
+    icon: '📈',
+    title: 'Tendencias Actuales',
+    description: 'Seguimos las tendencias del momento para maximizar el alcance orgánico y engagement.',
+  },
+  {
+    icon: '🎯',
+    title: 'Formato Orgánico',
+    description: 'Contenido que se siente real y auténtico, perfecto para conectar con tu audiencia objetivo.',
   },
 ];
 
@@ -46,8 +46,8 @@ const InfluencerSection = () => {
     <Wrapper>
       <Container>
         <Header>
-          <Title>Colaboraciones con Influencers</Title>
-          <Subtitle>Potencia tu marca con creadores de contenido</Subtitle>
+          <Title>Reels UGC con Actores/Talentos</Title>
+          <Subtitle>Contenido orgánico que genera confianza y engagement</Subtitle>
         </Header>
         <ContentGrid>
           <TextColumn>
@@ -62,18 +62,18 @@ const InfluencerSection = () => {
             ))}
             <HighlightBox>
               <HighlightText>
-                Los videos tienen la posibilidad de ejecutarse con influencer, destacando la colaboración
-                entre la marca (agencia), marca de auto e influencer como marca, potenciando la
-                visualización del contenido.
+                Los reels UGC se graban en sucursal con actores, talentos o influencers, creando contenido
+                orgánico y auténtico que sigue las tendencias actuales, potenciando la visualización al
+                combinar tu marca con la comunidad del talento colaborador.
               </HighlightText>
             </HighlightBox>
           </TextColumn>
           <ImageColumn>
             <BathtubImage
               src="https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_1200,f_auto/v1765081678/AQM00fcFB9UXzP0XHk25z0YsAV6IQq-Q2WvI-l4X-5FOxbB0Y3ZBy5qfCKmYppNZ1uqC6NSFUTJdtATYZoxwS7VKBBgGy7hP7dEnq-g_2_zalvgb.mp4"
-              alt="Colaboración con influencer"
+              alt="Reel UGC con actor/talento"
               aspectRatio="4/5"
-              placeholder="Video de colaboración con influencer"
+              placeholder="Video UGC en sucursal"
             />
           </ImageColumn>
         </ContentGrid>

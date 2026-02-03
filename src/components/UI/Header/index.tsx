@@ -24,7 +24,13 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <h1 style={{ color: 'white', fontSize: '1.5rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h1>
+          <Image
+            src="https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png"
+            alt="Oasis Creativa"
+            width={60}
+            height={60}
+            priority
+          />
         </LogoContainer>
       </Inner>
     </Wrapper>
