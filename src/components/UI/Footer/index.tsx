@@ -8,16 +8,16 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
 const linksArr = [
   {
-    title: 'About us',
-    links: ['Our Company', 'Careers', 'Press kits'],
+    title: 'Servicios',
+    links: ['Reels UGC', 'Videos de Autos', 'Estrategia de Contenido'],
   },
   {
-    title: 'Legal',
-    links: ['Terms of use', 'Privacy policy', 'About us'],
+    title: 'Empresa',
+    links: ['Nosotros', 'Portafolio', 'Contacto'],
   },
   {
-    title: 'About us',
-    links: ['Contact us', 'FAQ'],
+    title: 'Soporte',
+    links: ['FAQ', 'Preguntas Frecuentes'],
   },
 ];
 
@@ -44,20 +44,21 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <Image src={raft_footer_logo} alt="raft_footer_logo" />
+          <Image
+            src="https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png"
+            alt="Oasis Creativa"
+            width={80}
+            height={80}
+          />
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
             <QRContainer>
-              <QRImageCtn>
-                <Image src={qr_code} alt="qr_code" />
-              </QRImageCtn>
-              <TextCtn>
-                <p>Scan to download App on the Playstore and Appstore.</p>
-                <IconCtn>
-                  <Image src={ic_google_playstore} alt="playstore icon" />
-                  <Image src={ic_baseline_apple} alt="apple icon" />
-                </IconCtn>
+              <TextCtn style={{width: '100%'}}>
+                <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Oasis Creativa</h3>
+                <p>Contenido que convierte para agencias automotrices.</p>
+                <p style={{marginTop: '1rem'}}>📧 contacto@oasiscreativa.com</p>
+                <p>📱 +52 222 172 882</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -75,12 +76,12 @@ const Footer = () => {
           </FooterMiddle>
           <FooterBottom>
             <Translator>
-              <h3>English (United Kingdom)</h3>
+              <h3>Español (México)</h3>
               <Image src={ic_chevron_down} alt="chevron down" />
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Raft Corp, LLC.
+              Oasis Creativa 2025
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

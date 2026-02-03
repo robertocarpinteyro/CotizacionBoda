@@ -11,12 +11,7 @@ import {
   BriefNote,
 } from './styles';
 import MaskText from '@/components/Common/MaskText';
-import RevealCover from '@/components/Common/RevealCover';
-import { Div } from '../Featured/styles';
-import { imageVariants } from '../Featured';
 import { useIsMobile } from '../../../../libs/useIsMobile';
-import financial_freedom_banner from '../../../../public/images/financial_freedom_banner.png';
-import freedom_mobile_banner from '../../../../public/images/freedom_mobile_banner.png';
 import {
   desktopBriefNotePhrase,
   desktopHeaderPhrase,
@@ -25,6 +20,7 @@ import {
   mobileBriefNotePhrase,
   mobileHeaderPhrase,
   mobileParagraphPhrase,
+  ugcVideos,
 } from './constants';
 
 const FinancialFreedom = () => {
@@ -46,26 +42,26 @@ const FinancialFreedom = () => {
             </>
           )}
         </Header>
-        <BannerCtn>
-          <RevealCover />
-          <Div
-            variants={imageVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.25, once: true }}
-          >
-            {isMobile ? (
-              <Image src={freedom_mobile_banner} alt="banner_img" fill />
-            ) : (
-              <Image src={financial_freedom_banner} alt="banner_img" fill />
-            )}
-          </Div>
+        <BannerCtn style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '1.5rem', marginBottom: '3rem' }}>
+          {ugcVideos.map((video, i) => (
+            <div key={i} style={{ position: 'relative', width: '100%', paddingBottom: '177.78%', borderRadius: '12px', overflow: 'hidden' }}>
+              <video
+                controls
+                playsInline
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                poster={video.thumbnail}
+              >
+                <source src={video.url} type="video/mp4" />
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </div>
+          ))}
         </BannerCtn>
         <Edges>
           {edges.map((edge, i) => (
             <Edge key={i}>
               <Title>
-                <Image src={edge.icon} alt="icon" />
+                <span style={{ fontSize: '2rem' }}>{edge.icon}</span>
                 <MaskText phrases={new Array(edge.point)} tag="h3" />
               </Title>
               <MaskText phrases={new Array(edge.details)} tag="p" />

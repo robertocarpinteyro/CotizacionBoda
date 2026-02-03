@@ -1,41 +1,37 @@
-import ic_document_duplicate from '../../../../public/svgs/ic_document_duplicate.svg';
-import ic_identification from '../../../../public/svgs/ic_identification.svg';
-import ic_lock_closed from '../../../../public/svgs/ic_lock_closed.svg';
-
 // For desktop
-export const desktopHeaderPhrase = ["Introducing RAFT's Next-", 'Gen Cards'];
+export const desktopHeaderPhrase = ['Creando Contenido', 'Estratégico'];
 export const desktopParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards. Elevate your banking",
-  'experience with cutting-edge features, security, and unprecedented',
-  'convenience.',
+  'Descubre cómo transformamos tu presencia digital con contenido de alta calidad',
+  'diseñado específicamente para agencias automotrices que buscan',
+  'destacar y aumentar sus ventas.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ["Introducing RAFT's", 'Next-Gen Cards'];
+export const mobileHeaderPhrase = ['Creando Contenido', 'Estratégico'];
 export const mobileParagraphPhrase = [
-  " Discover RAFT's latest innovation – our new cards.",
-  ' Elevate your banking experience with cutting-edge',
-  'features, security, and unprecedented',
-  'convenience.',
+  'Descubre cómo transformamos tu presencia digital',
+  'con contenido de alta calidad diseñado específicamente',
+  'para agencias automotrices que buscan',
+  'destacar y aumentar sus ventas.',
 ];
 
 export const edges = [
   {
-    point: 'Contactless Technology',
+    point: 'Estrategia Personalizada',
     details:
-      'Our new cards come equipped with contactless technology, allowing you to make swift, secure payments with a simple tap.',
-    icon: ic_document_duplicate,
+      'Desarrollamos una estrategia de contenido adaptada a tu marca, objetivos y audiencia específica del sector automotriz.',
+    icon: '🎯',
   },
   {
-    point: 'Personalization',
+    point: 'Producción Profesional',
     details:
-      'Customize your card to reflect your unique style. Choose from a range of designs that suit your personality.',
-    icon: ic_identification,
+      'Equipo especializado en producción audiovisual automotriz con experiencia en crear contenido que convierte.',
+    icon: '🎬',
   },
   {
-    point: 'Enhanced Security',
+    point: 'Resultados Medibles',
     details:
-      'Your peace of mind is our priority. Our cards feature advanced security measures to protect your transactions and data.',
-    icon: ic_lock_closed,
+      'Seguimiento constante de métricas y optimización continua para asegurar el máximo retorno de tu inversión.',
+    icon: '📊',
   },
 ];

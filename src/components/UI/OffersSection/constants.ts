@@ -1,47 +1,43 @@
-import seamless_payments from '../../../../public/images/seamless_payments.png';
-import smart_investing from '../../../../public/images/smart_investing.png';
-import wealth_management from '../../../../public/images/wealth_management.png';
-import financial_planning from '../../../../public/images/financial_planning.png';
 // For desktop
 export const desktopHeaderPhrases = [
-  'Elevate Your Financial',
-  'Journey with RAFT',
+  'Impulsa tu Agencia',
+  'con Oasis Creativa',
 ];
 export const desktopParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From investments to payments,',
-  "we've got you covered. Join us and unlock your potential today.",
+  'Ofrecemos soluciones completas de contenido para agencias automotrices.',
+  'Desde la estrategia hasta la producción, lo tenemos cubierto.',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'RAFT offers a world of financial possibilities. From',
-  "investments to payments, we've got you covered.",
-  'Join us and unlock your potential today.',
+  'Ofrecemos soluciones completas de contenido',
+  'para agencias automotrices. Desde la estrategia',
+  'hasta la producción, lo tenemos cubierto.',
 ];
 
 export const offers = [
   {
-    illustration: seamless_payments,
-    title: 'Seamless Payments',
+    illustration: '📱',
+    title: 'Contenido para Redes',
     details:
-      'Enjoy secure, seamless transactions that make managing your money a breeze.',
+      '6 reels mensuales optimizados para maximizar el alcance y engagement en Instagram y TikTok.',
   },
   {
-    illustration: smart_investing,
-    title: 'Smart Investing',
+    illustration: '🎬',
+    title: 'Producción UGC',
     details:
-      'Grow your wealth confidently with our personalized investment solutions, tailored to your financial goals.',
+      'Videos auténticos con actores/talentos o influencers que generan confianza y conexión con tu audiencia.',
   },
   {
-    illustration: wealth_management,
-    title: 'Wealth Management',
+    illustration: '🚗',
+    title: 'Reels de Autos',
     details:
-      'Make informed decisions for your financial future with our wealth management expertise.',
+      'Presentación cinematográfica de fichas técnicas que destacan tus unidades y atraen compradores.',
   },
   {
-    illustration: financial_planning,
-    title: 'Financial Planning',
+    illustration: '📈',
+    title: 'Estrategia de Contenido',
     details:
-      'Achieve your financial dreams with our comprehensive financial planning services, guiding you toward a secure future.',
+      'Plan mensual adaptado a las tendencias y objetivos específicos de tu agencia automotriz.',
   },
 ];

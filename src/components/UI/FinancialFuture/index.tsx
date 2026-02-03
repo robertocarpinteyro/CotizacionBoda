@@ -1,7 +1,4 @@
 'use client';
-import Image from 'next/image';
-import future_banner from '../../../../public/images/future_banner.png';
-import future_mobile_banner from '../../../../public/images/future_mobile_banner.png';
 import {
   Wrapper,
   Inner,
@@ -23,6 +20,7 @@ import {
   mobileHeaderPhrase,
   mobileParagraphPhrase,
   stats,
+  autoVideos,
 } from './constants';
 
 const FinancialFuture = () => {
@@ -44,6 +42,23 @@ const FinancialFuture = () => {
             </>
           )}
         </Header>
+        <Banner style={{ position: 'relative', width: '100%', padding: '0 5%', marginBottom: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)', gap: '1.5rem' }}>
+            {autoVideos.map((video, i) => (
+              <div key={i} style={{ position: 'relative', width: '100%', paddingBottom: '177.78%', borderRadius: '12px', overflow: 'hidden' }}>
+                <video
+                  controls
+                  playsInline
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                  poster={video.thumbnail}
+                >
+                  <source src={video.url} type="video/mp4" />
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </div>
+            ))}
+          </div>
+        </Banner>
         <CardContainer>
           {cardsInfo.map((info, i) => (
             <Card key={i}>
@@ -52,7 +67,7 @@ const FinancialFuture = () => {
                 <MaskText phrases={new Array(info.details)} tag="p" />
               </TextCtn>
               <SVGCtn>
-                <Image src={info.icon} alt="icon" />
+                <span style={{ fontSize: '2.5rem' }}>{info.icon}</span>
               </SVGCtn>
             </Card>
           ))}
@@ -66,13 +81,6 @@ const FinancialFuture = () => {
           ))}
         </Stats>
       </Inner>
-      <Banner>
-        {isMobile ? (
-          <Image src={future_mobile_banner} alt="future_banner" fill />
-        ) : (
-          <Image src={future_banner} alt="future_banner" fill />
-        )}
-      </Banner>
     </Wrapper>
   );
 };

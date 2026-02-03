@@ -4,7 +4,8 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
   padding: 1rem 0;
-  border-bottom: 0.5px solid #3d3d3d;
+  background-color: var(--blue);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
 
   @media (max-width: 768px) {
     padding: 0.75rem 0;
@@ -39,7 +40,7 @@ export const BurgerMenu = styled.div`
 
     div {
       position: absolute;
-      background: var(--emerald);
+      background: var(--light-blue);
       width: '250px';
       height: '300px';
       border-radius: 25px;
@@ -63,7 +64,7 @@ export const Nav = styled.div`
   margin-right: -6.3rem;
 
   a {
-    color: var(--link-color);
+    color: var(--white);
     font-size: 1rem;
     font-weight: 400;
   }
@@ -91,7 +92,7 @@ export const Nav = styled.div`
 export const AbsoluteLinks = styled(Link)`
   position: absolute;
   top: 40px;
-  color: var(--link-color);
+  color: var(--white);
   font-size: 1rem;
   font-weight: 400;
 `;

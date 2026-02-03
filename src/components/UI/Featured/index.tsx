@@ -45,12 +45,7 @@ const Featured = () => {
             )}
           </Div>
         </ImageContainer>
-        <h2>Featured and Seen in</h2>
-        <ParallaxImages>
-          <ParallaxText baseVelocity={-4}>
-            <Image src={companies_image} alt="comapanies" />
-          </ParallaxText>
-        </ParallaxImages>
+        <h2 style={{textAlign: 'center', fontSize: '2rem', marginTop: '2rem'}}>Contenido que Impulsa Ventas</h2>
       </Inner>
     </Wrapper>
   );

@@ -1,56 +1,65 @@
-
-import ic_banknotes from '../../../../public/svgs/ic_banknotes.svg';
-import ic_circle_stack from '../../../../public/svgs/ic_circle_stack.svg';
-import ic_arrows_left_right from '../../../../public/svgs/ic_arrows_right_left.svg';
-
 // For desktop
-export const desktopHeaderPhrase = ['Your Financial Freedom,', 'Your Way'];
+export const desktopHeaderPhrase = ['Reels UGC con', 'Talentos/Actores'];
 export const desktopParagraphPhrase = [
-  'We believe that managing your finances should be effortless and cost-effective.',
-  "That's why we offer you the freedom you deserve.",
+  'Grabamos con actores o talentos en sucursal videos orgánicos (UGC)',
+  'siguiendo tendencias que generan engagement auténtico.',
 ];
 export const desktopBriefNotePhrase = [
-  'Smart investments,',
-  'secure payments, and',
-  'expert guidance, all in',
-  'one place.',
+  'Contenido auténtico que',
+  'conecta con tu audiencia',
+  'y genera confianza',
+  'en tu marca.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Your Financial', 'Freedom, Your Way'];
+export const mobileHeaderPhrase = ['Reels UGC', 'con Talentos'];
 export const mobileParagraphPhrase = [
-  'We believe that managing your finances should be',
-  "effortless and cost-effective. That's why we offer",
-  ' you the freedom you deserve.',
+  'Grabamos con actores o talentos en sucursal videos',
+  'orgánicos (UGC) siguiendo tendencias que generan',
+  'engagement auténtico.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Smart',
-  ' investments,',
-  'secure',
-  ' payments,',
-  'and expert',
-  'guidance, all',
-  'in one place.',
+  'Contenido',
+  'auténtico que',
+  'conecta con',
+  'tu audiencia',
+  'y genera',
+  'confianza.',
+];
+
+export const ugcVideos = [
+  {
+    url: 'https://www.tiktok.com/@panamotorspremiumoficial/video/7595977834129100050',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+  },
+  {
+    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOuFfmzM2U6Gg_gfcGOgMAKT9Th9Owudiqnjac8Bg1hXLc_f8LJ4zLRKHwARVGCC1dfLTso3icHVWqw0XpofVQFupW8RXZUC6KTjKw.mp4',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+  },
+  {
+    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOVbgomwa4VYss2IHPFsuaEJ89uj8_rO20H9WW2W2FlNsued_jsPzFjHS8vrkaAQZ8FJBN2KJe1WOVqjQreaDQB5z6VZbi4OCau-qg.mp4',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+  },
 ];
 
 export const edges = [
   {
-    point: 'No minimum balance fees',
+    point: 'Contenido Auténtico',
     details:
-      'Say goodbye to minimum balance fees. Your account, your balance—no hidden charges',
-    icon: ic_banknotes,
+      'Videos UGC que se sienten reales y generan mayor confianza con tu audiencia objetivo.',
+    icon: '🎬',
   },
   {
-    point: 'No monthly fees',
+    point: 'Tendencias Actuales',
     details:
-      'Bank with us without worrying about monthly fees. Keep more of your money where it belongs—in your account',
-    icon: ic_circle_stack,
+      'Aprovechamos las tendencias del momento para maximizar el alcance orgánico de tu contenido.',
+    icon: '📈',
   },
   {
-    point: 'No bank transfer fees',
+    point: 'Mayor Engagement',
     details:
-      'Seamlessly transfer funds without the extra cost. Send and receive money with zero bank transfer fees.',
-    icon: ic_arrows_left_right,
+      'El formato UGC genera 4x más interacción que el contenido tradicional de marca.',
+    icon: '💬',
   },
 ];

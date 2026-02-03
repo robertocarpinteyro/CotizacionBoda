@@ -12,34 +12,34 @@ export type Props = {
 export const testimonials = [
   {
     testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
+      "Oasis Creativa transformó nuestra presencia en redes sociales. Los reels UGC que crean con actores son increíblemente auténticos y han triplicado nuestro engagement. Las ventas provenientes de Instagram aumentaron un 40% en los últimos 3 meses.",
+    person: 'Roberto Martínez',
     avatar: robert_fox,
   },
   {
     testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
+      "El contenido cinematográfico de las unidades que produce Oasis Creativa es impresionante. Los videos de fichas técnicas destacan perfectamente cada auto y hemos notado un aumento significativo en consultas por WhatsApp. El equipo entiende perfectamente el sector automotriz.",
+    person: 'Carlos Hernández',
     avatar: cameron_williamson,
   },
   {
     testimony:
-      "RAFT's financial planning services have been a lifeline for me. I always struggled with managing my money, but their team crafted a tailored plan that addressed my goals and concerns. It's been a game-changer in achieving my financial dreams",
-    person: 'Esther Howard',
+      "Trabajar con Oasis Creativa ha sido clave para modernizar nuestra estrategia digital. Los reels que crean siguiendo las tendencias actuales nos han posicionado como una agencia innovadora. El ROI ha superado nuestras expectativas completamente.",
+    person: 'Ana González',
     avatar: esther_howard,
   },
   {
     testimony:
-      "I can't express how grateful I am to RAFT. Their wealth management services have been a game-changer for my family's financial security. The expert guidance and personalized strategies have given us peace of mind, knowing that our future is in capable hands.",
-    person: 'Cameron Williamson',
+      "La calidad del contenido UGC es excepcional. Los videos se sienten genuinos y conectan perfectamente con nuestro público objetivo. Desde que trabajamos con Oasis Creativa, nuestra tasa de conversión en redes sociales ha mejorado notablemente.",
+    person: 'Carlos Hernández',
     avatar: cameron_williamson,
   },
   {
     testimony:
-      "RAFT has transformed my approach to finance. Their smart investing options have helped me grow my wealth, and their user-friendly platform makes managing my money a breeze. I've never felt more confident about my financial future.",
-    person: 'Robert Fox',
+      "Estamos muy satisfechos con el servicio de Oasis Creativa. Los 6 reels mensuales mantienen nuestra presencia activa y relevante. El equipo es profesional, creativo y siempre entrega a tiempo. Altamente recomendados para cualquier agencia automotriz.",
+    person: 'Roberto Martínez',
     avatar: robert_fox,
   },
 ];
 
-export const desktopHeaderPhrase = ['Join over 3 million', 'members'];
+export const desktopHeaderPhrase = ['Agencias que confían', 'en nosotros'];

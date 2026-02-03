@@ -1,13 +1,13 @@
 // For desktop
-export const phrases = ['Building the future of', 'banking.'];
+export const phrases = ['Contenido que convierte', 'para automotrices.'];
 export const paragraphPhrases = [
-  "Experience the future of banking with RAFT. We're here to",
-  'empower your financial journey.',
+  'Creamos contenido estratégico que impulsa las ventas de tu',
+  'agencia automotriz en redes sociales.',
 ];
 
 // For mobile
-export const mobilePhrases = ['Building the future', 'of banking'];
+export const mobilePhrases = ['Contenido que', 'convierte'];
 export const mobileParagraphPhrases = [
-  "Experience the future of banking with RAFT. We're",
-  'here to empower your financial journey.',
+  'Creamos contenido estratégico que impulsa',
+  'las ventas de tu agencia automotriz.',
 ];

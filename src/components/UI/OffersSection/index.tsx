@@ -36,7 +36,7 @@ const OffersSection = () => {
           {offers.slice(0, 2).map((offer, i) => (
             <OfferCard key={i}>
               <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
+                <span style={{ fontSize: '4rem' }}>{offer.illustration}</span>
               </ImageCtn>
               <TextCtn>
                 <MaskText phrases={new Array(offer.title)} tag="h2" />
@@ -49,7 +49,7 @@ const OffersSection = () => {
           {offers.slice(2, 4).map((offer, i) => (
             <OfferCard key={i}>
               <ImageCtn>
-                <Image src={offer.illustration} alt="illustration" />
+                <span style={{ fontSize: '4rem' }}>{offer.illustration}</span>
               </ImageCtn>
               <TextCtn>
                 <MaskText phrases={new Array(offer.title)} tag="h2" />

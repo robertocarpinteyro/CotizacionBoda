@@ -1,57 +1,71 @@
-import ic_money_send from '../../../../public/svgs/ic_money_send.svg';
-import ic_wallet_minus from '../../../../public/svgs/ic_wallet_minus.svg';
 export const cardsInfo = [
   {
-    title: 'Spend Better',
+    title: 'Ficha Técnica Visual',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
-    icon: ic_money_send,
+      'Presentamos cada unidad con sus especificaciones clave de forma atractiva y dinámica.',
+    icon: '🚗',
   },
   {
-    title: 'Invest Better',
+    title: 'Alta Calidad',
     details:
-      'Set and achieve financial goals with ease, automate your savings, and watch your money grow without the stress.',
-    icon: ic_wallet_minus,
+      'Videos cinematográficos que destacan lo mejor de cada vehículo y captan la atención.',
+    icon: '🎥',
+  },
+  {
+    title: 'Optimizado para Ventas',
+    details:
+      'Contenido diseñado específicamente para convertir espectadores en compradores potenciales.',
+    icon: '💰',
+  },
+];
+
+export const autoVideos = [
+  {
+    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t16/f2/m69/AQNFo7t3sBuYEy25-UxfMVLEJBIMaN7YVw2ink0yXCYp93Omvv-GZ73MUMeoAmJFZcsHxxE0YizrnCGq1ulPfB4f.mp4',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+  },
+  {
+    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOPROH7EtC9FO3F5weLdM8rS91gvtxjk10Cd5nb6TAtV0_sS-PiQ5zKiFsQfW-i8vnb0x3N-XSF9YcTTMWGrEvukr11T4wZVFeaaAg.mp4',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+  },
+  {
+    url: 'https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m86/AQPA61WHyXOu5lmTIIgZGch-epLnfVZnnBFGvmOZUOWlh8C0eJt3K57T-cpWo2q49oltqjpzfXcbRgP1KbIB-Gz6PTfrc4L_UBos_ZM.mp4',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
 ];
 
 export const stats = [
   {
-    number: '50+',
-    subtitle: 'cities',
+    number: '6',
+    subtitle: 'reels mensuales',
   },
   {
-    number: '50,000+',
-    subtitle: 'transactions',
+    number: '100%',
+    subtitle: 'optimizado',
   },
   {
-    number: '3M+',
-    subtitle: 'users',
-  },
-  {
-    number: '5+',
-    subtitle: 'user ratings',
+    number: '3x',
+    subtitle: 'más engagement',
   },
 ];
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Confidently Shape Your',
-  'Financial Future',
+  'Destacar las Unidades',
+  'en Venta',
 ];
 export const desktopParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape your financial future. Our modern',
-  'approach simplifies saving and investing, making it easier than ever.',
+  'Videos de alta calidad que presentan la ficha técnica de cada auto de forma',
+  'cinematográfica y profesional para impulsar las ventas.',
 ];
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Confidently Shape',
-  ' Your Financial Future',
+  'Destacar las',
+  'Unidades en Venta',
 ];
 export const mobileParagraphPhrase = [
-  'At RAFT, we empower you to confidently shape',
-  'your financial future. Our modern approach',
-  'simplifies saving and investing, making it easier',
-  'than ever.',
+  'Videos de alta calidad que presentan la ficha',
+  'técnica de cada auto de forma cinematográfica',
+  'y profesional para impulsar las ventas.',
 ];
