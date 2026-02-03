@@ -32,7 +32,7 @@ export const Header = styled.div`
 export const Title = styled.h2`
   font-size: 3rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 1rem;
   line-height: 1.2;
 
@@ -85,14 +85,14 @@ export const VideoThumbnail = styled.div`
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
   border: 2px solid var(--blue);
   transition: all 0.3s ease;
 
   &:hover {
     border-color: var(--light-blue);
     transform: scale(1.02);
-    box-shadow: 0 8px 24px rgba(44, 117, 251, 0.2);
+    box-shadow: 0 8px 24px rgba(44, 117, 251, 0.3);
   }
 
   video {
@@ -224,14 +224,14 @@ export const FeatureCard = styled.div`
   text-align: center;
   padding: 2rem;
   border-radius: 1rem;
-  background: #f8f9fa;
-  border: 2px solid #e9ecef;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 
   &:hover {
     border-color: var(--blue);
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(44, 117, 251, 0.1);
+    box-shadow: 0 8px 24px rgba(44, 117, 251, 0.2);
   }
 
   @media (max-width: 768px) {
@@ -251,7 +251,7 @@ export const FeatureIcon = styled.div`
 export const FeatureTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 0.5rem;
 
   @media (max-width: 768px) {
