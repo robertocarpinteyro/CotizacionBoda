@@ -20,17 +20,17 @@ import {
 const ugcVideos = [
   {
     title: 'Reel UGC 1',
-    videoUrl: 'https://www.tiktok.com/@panamotorspremiumoficial/video/7595977834129100050',
+    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152818/AQOVbgomwa4VYss2IHPFsuaEJ89uj8_rO20H9WW2W2FlNsued_jsPzFjHS8vrkaAQZ8FJBN2KJe1WOVqjQreaDQB5z6VZbi4OCau-qg_uqvlih.mp4',
     thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
   {
     title: 'Reel UGC 2',
-    videoUrl: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOuFfmzM2U6Gg_gfcGOgMAKT9Th9Owudiqnjac8Bg1hXLc_f8LJ4zLRKHwARVGCC1dfLTso3icHVWqw0XpofVQFupW8RXZUC6KTjKw.mp4',
+    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152818/AQOuFfmzM2U6Gg_gfcGOgMAKT9Th9Owudiqnjac8Bg1hXLc_f8LJ4zLRKHwARVGCC1dfLTso3icHVWqw0XpofVQFupW8RXZUC6KTjKw_mrn7bs.mp4',
     thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
   {
     title: 'Reel UGC 3',
-    videoUrl: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOVbgomwa4VYss2IHPFsuaEJ89uj8_rO20H9WW2W2FlNsued_jsPzFjHS8vrkaAQZ8FJBN2KJe1WOVqjQreaDQB5z6VZbi4OCau-qg.mp4',
+    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152878/tiktok_panamotorspremiumoficial_7595977834129100050_qgxwdi.mp4',
     thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
 ];

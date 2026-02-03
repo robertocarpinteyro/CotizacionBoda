@@ -20,17 +20,17 @@ import {
 const autoVideos = [
   {
     title: 'Auto Reel 1',
-    videoUrl: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t16/f2/m69/AQNFo7t3sBuYEy25-UxfMVLEJBIMaN7YVw2ink0yXCYp93Omvv-GZ73MUMeoAmJFZcsHxxE0YizrnCGq1ulPfB4f.mp4',
+    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152986/AQOPROH7EtC9FO3F5weLdM8rS91gvtxjk10Cd5nb6TAtV0_sS-PiQ5zKiFsQfW-i8vnb0x3N-XSF9YcTTMWGrEvukr11T4wZVFeaaAg_o1kcqj.mp4',
     thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
   {
     title: 'Auto Reel 2',
-    videoUrl: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOPROH7EtC9FO3F5weLdM8rS91gvtxjk10Cd5nb6TAtV0_sS-PiQ5zKiFsQfW-i8vnb0x3N-XSF9YcTTMWGrEvukr11T4wZVFeaaAg.mp4',
+    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152990/AQNFo7t3sBuYEy25-UxfMVLEJBIMaN7YVw2ink0yXCYp93Omvv-GZ73MUMeoAmJFZcsHxxE0YizrnCGq1ulPfB4f_b51icm.mp4',
     thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
   {
     title: 'Auto Reel 3',
-    videoUrl: 'https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m86/AQPA61WHyXOu5lmTIIgZGch-epLnfVZnnBFGvmOZUOWlh8C0eJt3K57T-cpWo2q49oltqjpzfXcbRgP1KbIB-Gz6PTfrc4L_UBos_ZM.mp4',
+    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770153150/AQPA61WHyXOu5lmTIIgZGch-epLnfVZnnBFGvmOZUOWlh8C0eJt3K57T-cpWo2q49oltqjpzfXcbRgP1KbIB-Gz6PTfrc4L_UBos_ZM_owl4mg.mp4',
     thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
   },
 ];

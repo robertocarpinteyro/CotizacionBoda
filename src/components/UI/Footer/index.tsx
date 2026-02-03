@@ -20,7 +20,7 @@ const linksArr = [
     links: [
       { text: 'Sobre la Propuesta', url: '#' },
       { text: 'Portafolio', url: '#' },
-      { text: 'Contacto', url: 'mailto:contacto@cacomixtle.films' },
+      { text: 'Contacto', url: 'mailto:contacto@oasiscreativa.com' },
     ],
   },
 ];
@@ -48,7 +48,7 @@ const Footer = () => {
     <Wrapper>
       <Inner>
         <FooterLogo>
-          <h2 style={{ color: 'white', fontSize: '2rem', fontWeight: '700' }}>CACOMIXTLE FILMS</h2>
+          <h2 style={{ color: 'white', fontSize: '2rem', fontWeight: '700' }}>OASIS CREATIVA</h2>
         </FooterLogo>
         <FooterMainContent>
           <FooterMiddle>
