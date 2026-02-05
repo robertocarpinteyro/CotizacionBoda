@@ -45,7 +45,7 @@ const Featured = () => {
             )}
           </Div>
         </ImageContainer>
-        <h2 style={{textAlign: 'center', fontSize: '2rem', marginTop: '2rem'}}>Contenido que Impulsa Ventas</h2>
+        <h2 style={{textAlign: 'center', fontSize: '2rem', marginTop: '2rem'}}>Calidad Cinematográfica para tu Día Especial</h2>
       </Inner>
     </Wrapper>
   );

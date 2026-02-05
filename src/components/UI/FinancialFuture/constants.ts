@@ -1,71 +1,71 @@
 export const cardsInfo = [
   {
-    title: 'Ficha Técnica Visual',
+    title: '5 Reels para Redes',
     details:
-      'Presentamos cada unidad con sus especificaciones clave de forma atractiva y dinámica.',
-    icon: '🚗',
+      'Hasta 40 segundos cada uno, perfectos para compartir en Instagram, TikTok y Facebook. Momentos destacados con música y edición profesional.',
+    icon: '📱',
   },
   {
-    title: 'Alta Calidad',
+    title: 'Video Highlight 4K',
     details:
-      'Videos cinematográficos que destacan lo mejor de cada vehículo y captan la atención.',
-    icon: '🎥',
+      'Película completa de 4-6 minutos en calidad 4K. La historia de tu día especial con narrativa cinematográfica y audio profesional.',
+    icon: '🎬',
   },
   {
-    title: 'Optimizado para Ventas',
+    title: 'Cineminto Highlight',
     details:
-      'Contenido diseñado específicamente para convertir espectadores en compradores potenciales.',
-    icon: '💰',
+      'Video de 1 minuto con los momentos más emotivos. Perfecto para compartir rápidamente y revivir la magia de tu boda.',
+    icon: '✨',
   },
 ];
 
 export const autoVideos = [
   {
-    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t16/f2/m69/AQNFo7t3sBuYEy25-UxfMVLEJBIMaN7YVw2ink0yXCYp93Omvv-GZ73MUMeoAmJFZcsHxxE0YizrnCGq1ulPfB4f.mp4',
-    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    url: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334142/9837c6f78552d14f441722a0f80cafb0-xxlarge_x6grtm.jpg',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334142/9837c6f78552d14f441722a0f80cafb0-xxlarge_x6grtm.jpg',
   },
   {
-    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOPROH7EtC9FO3F5weLdM8rS91gvtxjk10Cd5nb6TAtV0_sS-PiQ5zKiFsQfW-i8vnb0x3N-XSF9YcTTMWGrEvukr11T4wZVFeaaAg.mp4',
-    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    url: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334370/91ebce557df7d97b598c4084a77f100f-xxlarge_w1dddt.jpg',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334370/91ebce557df7d97b598c4084a77f100f-xxlarge_w1dddt.jpg',
   },
   {
-    url: 'https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m86/AQPA61WHyXOu5lmTIIgZGch-epLnfVZnnBFGvmOZUOWlh8C0eJt3K57T-cpWo2q49oltqjpzfXcbRgP1KbIB-Gz6PTfrc4L_UBos_ZM.mp4',
-    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    url: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg',
   },
 ];
 
 export const stats = [
   {
-    number: '6',
-    subtitle: 'reels mensuales',
+    number: '5',
+    subtitle: 'reels sociales',
   },
   {
-    number: '100%',
-    subtitle: 'optimizado',
+    number: '4K',
+    subtitle: 'ultra HD',
   },
   {
-    number: '3x',
-    subtitle: 'más engagement',
+    number: '2',
+    subtitle: 'días completos',
   },
 ];
 
 // For desktop
 export const desktopHeaderPhrase = [
-  'Destacar las Unidades',
-  'en Venta',
+  'Entregables que',
+  'Perduran para Siempre',
 ];
 export const desktopParagraphPhrase = [
-  'Videos de alta calidad que presentan la ficha técnica de cada auto de forma',
-  'cinematográfica y profesional para impulsar las ventas.',
+  'Recibirás todos tus videos en formato digital a través de una landing page exclusiva',
+  'y en USB físico. Contenido optimizado para compartir y guardar tus recuerdos.',
 ];
 
 // For mobile
 export const mobileHeaderPhrase = [
-  'Destacar las',
-  'Unidades en Venta',
+  'Entregables que',
+  'Perduran',
 ];
 export const mobileParagraphPhrase = [
-  'Videos de alta calidad que presentan la ficha',
-  'técnica de cada auto de forma cinematográfica',
-  'y profesional para impulsar las ventas.',
+  'Recibirás todos tus videos en formato digital',
+  'a través de landing page exclusiva y USB físico.',
+  'Contenido para compartir tus recuerdos.',
 ];
