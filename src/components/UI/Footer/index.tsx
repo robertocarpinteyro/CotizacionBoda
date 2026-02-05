@@ -8,16 +8,16 @@ import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
 const linksArr = [
   {
-    title: 'Servicios',
-    links: ['Reels UGC', 'Videos de Autos', 'Estrategia de Contenido'],
+    title: 'Paquete',
+    links: ['Cobertura 2 Días', 'Equipo Profesional', 'Calidad 4K'],
   },
   {
-    title: 'Empresa',
-    links: ['Nosotros', 'Portafolio', 'Contacto'],
+    title: 'Entregables',
+    links: ['5 Reels Sociales', 'Video Highlight 4K', 'Cineminto 1 Min', 'Landing Page', 'USB Físico'],
   },
   {
     title: 'Soporte',
-    links: ['FAQ', 'Preguntas Frecuentes'],
+    links: ['FAQ', 'Preguntas Frecuentes', 'Contacto'],
   },
 ];
 
@@ -55,10 +55,10 @@ const Footer = () => {
           <FooterMiddle>
             <QRContainer>
               <TextCtn style={{width: '100%'}}>
-                <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Oasis Creativa</h3>
-                <p>Contenido que convierte para agencias automotrices.</p>
-                <p style={{marginTop: '1rem'}}>📧 contacto@oasiscreativa.com</p>
-                <p>📱 +52 222 172 882</p>
+                <h3 style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}>Videografía Cinematográfica</h3>
+                <p>Tu boda filmada como una película. Calidad 4K profesional.</p>
+                <p style={{marginTop: '1rem'}}>📧 info@videografiabodas.com</p>
+                <p>📱 Contacta para más información</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -81,7 +81,7 @@ const Footer = () => {
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              Oasis Creativa 2025
+              Videografía Cinematográfica 2026
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

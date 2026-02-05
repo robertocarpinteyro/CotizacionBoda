@@ -1,37 +1,37 @@
 // For desktop
-export const desktopHeaderPhrase = ['Creando Contenido', 'Estratégico'];
+export const desktopHeaderPhrase = ['Experiencia que Marca', 'la Diferencia'];
 export const desktopParagraphPhrase = [
-  'Descubre cómo transformamos tu presencia digital con contenido de alta calidad',
-  'diseñado específicamente para agencias automotrices que buscan',
-  'destacar y aumentar sus ventas.',
+  'Revive cada emoción de tu boda con una producción cinematográfica',
+  'que captura la esencia de tu historia de amor con',
+  'la calidad y detalle que merece tu día especial.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Creando Contenido', 'Estratégico'];
+export const mobileHeaderPhrase = ['Experiencia que', 'Marca la Diferencia'];
 export const mobileParagraphPhrase = [
-  'Descubre cómo transformamos tu presencia digital',
-  'con contenido de alta calidad diseñado específicamente',
-  'para agencias automotrices que buscan',
-  'destacar y aumentar sus ventas.',
+  'Revive cada emoción de tu boda con una',
+  'producción cinematográfica que captura la',
+  'esencia de tu historia de amor con calidad',
+  'y detalle profesional.',
 ];
 
 export const edges = [
   {
-    point: 'Estrategia Personalizada',
+    point: 'Equipo Profesional Completo',
     details:
-      'Desarrollamos una estrategia de contenido adaptada a tu marca, objetivos y audiencia específica del sector automotriz.',
-    icon: '🎯',
+      '2 videógrafos expertos, 1 operador de drone certificado y 1 staff de apoyo trabajando en perfecta sincronía para capturar cada ángulo de tu día especial.',
+    icon: '👥',
   },
   {
-    point: 'Producción Profesional',
+    point: 'Tecnología Cinematográfica',
     details:
-      'Equipo especializado en producción audiovisual automotriz con experiencia en crear contenido que convierte.',
-    icon: '🎬',
+      'Cámaras 4K, estabilizadores profesionales, drones de última generación y equipo de audio especializado para calidad de película.',
+    icon: '🎥',
   },
   {
-    point: 'Resultados Medibles',
+    point: 'Entrega Garantizada',
     details:
-      'Seguimiento constante de métricas y optimización continua para asegurar el máximo retorno de tu inversión.',
-    icon: '📊',
+      'Recibe todos tus videos editados profesionalmente en 4-6 semanas. Formato digital en landing exclusiva + USB físico de respaldo.',
+    icon: '✅',
   },
 ];

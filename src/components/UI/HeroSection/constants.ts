@@ -1,13 +1,13 @@
 // For desktop
-export const phrases = ['Contenido que convierte', 'para automotrices.'];
+export const phrases = ['Tu boda filmada como', 'una película.'];
 export const paragraphPhrases = [
-  'Creamos contenido estratégico que impulsa las ventas de tu',
-  'agencia automotriz en redes sociales.',
+  'Capturamos cada momento de tu gran día con calidad cinematográfica',
+  'profesional que perdurará para siempre.',
 ];
 
 // For mobile
-export const mobilePhrases = ['Contenido que', 'convierte'];
+export const mobilePhrases = ['Tu boda como', 'una película'];
 export const mobileParagraphPhrases = [
-  'Creamos contenido estratégico que impulsa',
-  'las ventas de tu agencia automotriz.',
+  'Capturamos cada momento de tu gran día',
+  'con calidad cinematográfica profesional.',
 ];

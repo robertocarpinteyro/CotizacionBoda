@@ -3,8 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Raft',
-  description: 'Building the future of banking',
+  title: 'Videografía Cinematográfica de Bodas',
+  description: 'Tu boda filmada como una película. Cobertura profesional en 4K con calidad cinematográfica que perdurará para siempre.',
 };
 
 export default function RootLayout({

@@ -1,43 +1,43 @@
 // For desktop
 export const desktopHeaderPhrases = [
-  'Impulsa tu Agencia',
-  'con Oasis Creativa',
+  'Paquete Premium',
+  'Boda Cinematográfica',
 ];
 export const desktopParagraphPhrase = [
-  'Ofrecemos soluciones completas de contenido para agencias automotrices.',
-  'Desde la estrategia hasta la producción, lo tenemos cubierto.',
+  'Cobertura completa de 2 días (4 y 5 de Agosto) con equipo profesional y',
+  'entregables en calidad 4K que harán de tu boda una obra cinematográfica.',
 ];
 
 // For mobile
 export const mobileParagraphPhrase = [
-  'Ofrecemos soluciones completas de contenido',
-  'para agencias automotrices. Desde la estrategia',
-  'hasta la producción, lo tenemos cubierto.',
+  'Cobertura completa de 2 días con equipo',
+  'profesional y entregables en calidad 4K que',
+  'harán de tu boda una obra cinematográfica.',
 ];
 
 export const offers = [
   {
-    illustration: '📱',
-    title: 'Contenido para Redes',
+    illustration: '🎥',
+    title: 'Cobertura Completa - 2 Días',
     details:
-      '6 reels mensuales optimizados para maximizar el alcance y engagement en Instagram y TikTok.',
+      'Getting ready, ceremonia y recepción hasta 10 hrs por día. Días 4 y 5 de Agosto con equipo profesional completo.',
+  },
+  {
+    illustration: '👥',
+    title: 'Equipo Profesional',
+    details:
+      '2 videógrafos expertos, 1 operador de drone certificado y 1 staff de apoyo para capturar cada momento desde todos los ángulos.',
   },
   {
     illustration: '🎬',
-    title: 'Producción UGC',
+    title: 'Calidad Cinematográfica',
     details:
-      'Videos auténticos con actores/talentos o influencers que generan confianza y conexión con tu audiencia.',
+      'Filmación en 4K con equipo profesional de cine. Tu boda lucirá como una producción de Hollywood con colores, iluminación y composición de nivel cinematográfico.',
   },
   {
-    illustration: '🚗',
-    title: 'Reels de Autos',
+    illustration: '🎁',
+    title: 'Regalo Especial',
     details:
-      'Presentación cinematográfica de fichas técnicas que destacan tus unidades y atraen compradores.',
-  },
-  {
-    illustration: '📈',
-    title: 'Estrategia de Contenido',
-    details:
-      'Plan mensual adaptado a las tendencias y objetivos específicos de tu agencia automotriz.',
+      '¡Aparta este mes y recibe GRATIS 30 fotografías profesionales + invitaciones digitales con formulario de asistencia y envío automático por correo!',
   },
 ];

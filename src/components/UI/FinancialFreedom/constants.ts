@@ -1,65 +1,63 @@
 // For desktop
-export const desktopHeaderPhrase = ['Reels UGC con', 'Talentos/Actores'];
+export const desktopHeaderPhrase = ['Calidad Cinematográfica', 'Como una Película'];
 export const desktopParagraphPhrase = [
-  'Grabamos con actores o talentos en sucursal videos orgánicos (UGC)',
-  'siguiendo tendencias que generan engagement auténtico.',
+  'Utilizamos equipo profesional de cine y técnicas de Hollywood',
+  'para que tu boda luzca como una producción de alto presupuesto.',
 ];
 export const desktopBriefNotePhrase = [
-  'Contenido auténtico que',
-  'conecta con tu audiencia',
-  'y genera confianza',
-  'en tu marca.',
+  'Tu historia de amor',
+  'contada con la misma',
+  'calidad que las',
+  'películas de cine.',
 ];
 
 // For mobile
-export const mobileHeaderPhrase = ['Reels UGC', 'con Talentos'];
+export const mobileHeaderPhrase = ['Calidad', 'Cinematográfica'];
 export const mobileParagraphPhrase = [
-  'Grabamos con actores o talentos en sucursal videos',
-  'orgánicos (UGC) siguiendo tendencias que generan',
-  'engagement auténtico.',
+  'Utilizamos equipo profesional de cine y técnicas',
+  'de Hollywood para que tu boda luzca como una',
+  'producción de alto presupuesto.',
 ];
 
 export const mobileBriefNotePhrase = [
-  'Contenido',
-  'auténtico que',
-  'conecta con',
-  'tu audiencia',
-  'y genera',
-  'confianza.',
+  'Tu historia',
+  'de amor contada',
+  'con calidad',
+  'de cine.',
 ];
 
 export const ugcVideos = [
   {
-    url: 'https://www.tiktok.com/@panamotorspremiumoficial/video/7595977834129100050',
-    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    url: 'https://drive.google.com/file/d/1AtBE8gsV4VG2UIUVbKNvwzLniZIjwzvT/preview',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334370/91ebce557df7d97b598c4084a77f100f-xxlarge_w1dddt.jpg',
   },
   {
-    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOuFfmzM2U6Gg_gfcGOgMAKT9Th9Owudiqnjac8Bg1hXLc_f8LJ4zLRKHwARVGCC1dfLTso3icHVWqw0XpofVQFupW8RXZUC6KTjKw.mp4',
-    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    url: 'https://drive.google.com/file/d/1AtBE8gsV4VG2UIUVbKNvwzLniZIjwzvT/preview',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334142/9837c6f78552d14f441722a0f80cafb0-xxlarge_x6grtm.jpg',
   },
   {
-    url: 'https://scontent-sea1-1.cdninstagram.com/o1/v/t2/f2/m86/AQOVbgomwa4VYss2IHPFsuaEJ89uj8_rO20H9WW2W2FlNsued_jsPzFjHS8vrkaAQZ8FJBN2KJe1WOVqjQreaDQB5z6VZbi4OCau-qg.mp4',
-    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    url: 'https://drive.google.com/file/d/1AtBE8gsV4VG2UIUVbKNvwzLniZIjwzvT/preview',
+    thumbnail: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg',
   },
 ];
 
 export const edges = [
   {
-    point: 'Contenido Auténtico',
+    point: 'Composición de Cine',
     details:
-      'Videos UGC que se sienten reales y generan mayor confianza con tu audiencia objetivo.',
+      'Cada toma está cuidadosamente encuadrada siguiendo las reglas de composición cinematográfica. Movimientos de cámara suaves y profesionales que crean una experiencia visual impresionante.',
     icon: '🎬',
   },
   {
-    point: 'Tendencias Actuales',
+    point: 'Colorimetría Profesional',
     details:
-      'Aprovechamos las tendencias del momento para maximizar el alcance orgánico de tu contenido.',
-    icon: '📈',
+      'Gradación de color (color grading) estilo película para crear la atmósfera perfecta. Colores ricos y cinematográficos que hacen que cada frame sea una obra de arte.',
+    icon: '🎨',
   },
   {
-    point: 'Mayor Engagement',
+    point: 'Audio Cinematográfico',
     details:
-      'El formato UGC genera 4x más interacción que el contenido tradicional de marca.',
-    icon: '💬',
+      'Captura de audio profesional con música emotiva seleccionada. Votos, risas y momentos especiales grabados con claridad cristalina que complementan la experiencia visual.',
+    icon: '🎵',
   },
 ];

@@ -12,34 +12,34 @@ export type Props = {
 export const testimonials = [
   {
     testimony:
-      "Oasis Creativa transformó nuestra presencia en redes sociales. Los reels UGC que crean con actores son increíblemente auténticos y han triplicado nuestro engagement. Las ventas provenientes de Instagram aumentaron un 40% en los últimos 3 meses.",
-    person: 'Roberto Martínez',
+      "¡Wow! El video de nuestra boda superó todas nuestras expectativas. La calidad cinematográfica es increíble, cada toma parece sacada de una película. Revivimos nuestro día especial cada vez que lo vemos. El equipo fue profesional, discreto y capturó momentos que ni siquiera sabíamos que sucedieron.",
+    person: 'María & Carlos Rodríguez',
     avatar: robert_fox,
   },
   {
     testimony:
-      "El contenido cinematográfico de las unidades que produce Oasis Creativa es impresionante. Los videos de fichas técnicas destacan perfectamente cada auto y hemos notado un aumento significativo en consultas por WhatsApp. El equipo entiende perfectamente el sector automotriz.",
-    person: 'Carlos Hernández',
+      "La atención al detalle es impresionante. Los reels que crearon fueron perfectos para compartir con familiares y amigos. El video highlight de 6 minutos nos hace llorar cada vez que lo vemos. Vale cada peso invertido. ¡Totalmente recomendados!",
+    person: 'Andrea & Luis García',
     avatar: cameron_williamson,
   },
   {
     testimony:
-      "Trabajar con Oasis Creativa ha sido clave para modernizar nuestra estrategia digital. Los reels que crean siguiendo las tendencias actuales nos han posicionado como una agencia innovadora. El ROI ha superado nuestras expectativas completamente.",
-    person: 'Ana González',
+      "Contraté sus servicios por la calidad cinematográfica que prometían y cumplieron al 100%. El operador de drone capturó tomas espectaculares de nuestra ceremonia en la hacienda. Los 2 videógrafos trabajaron increíblemente bien juntos. Recibimos todo en tiempo y forma.",
+    person: 'Sofia & Miguel Hernández',
     avatar: esther_howard,
   },
   {
     testimony:
-      "La calidad del contenido UGC es excepcional. Los videos se sienten genuinos y conectan perfectamente con nuestro público objetivo. Desde que trabajamos con Oasis Creativa, nuestra tasa de conversión en redes sociales ha mejorado notablemente.",
-    person: 'Carlos Hernández',
+      "El regalo de las 30 fotografías y las invitaciones digitales fue un plus increíble. Las invitaciones con formulario hicieron súper fácil la organización. El video final tiene una colorimetría hermosa y la música está perfectamente seleccionada. ¡Gracias por capturar nuestra historia!",
+    person: 'Valeria & Javier López',
     avatar: cameron_williamson,
   },
   {
     testimony:
-      "Estamos muy satisfechos con el servicio de Oasis Creativa. Los 6 reels mensuales mantienen nuestra presencia activa y relevante. El equipo es profesional, creativo y siempre entrega a tiempo. Altamente recomendados para cualquier agencia automotriz.",
-    person: 'Roberto Martínez',
+      "No puedo dejar de ver nuestro cineminto de 1 minuto. Es perfecto, emotivo y captura la esencia de nuestro día. El equipo fue amable, profesional y se acomodó a todos nuestros tiempos. La landing page donde entregaron todo es hermosa. ¡Mejor decisión que tomamos!",
+    person: 'Daniela & Roberto Martínez',
     avatar: robert_fox,
   },
 ];
 
-export const desktopHeaderPhrase = ['Agencias que confían', 'en nosotros'];
+export const desktopHeaderPhrase = ['Parejas que confiaron', 'en nosotros'];
