@@ -3,8 +3,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Propuesta Redes Sociales - Oasis Creativa',
-  description: 'Propuesta de contenido digital para Zenith Motors',
+  title: 'Cotización Boda - Oasis Creativa | Videografía Cinematográfica',
+  description: 'Propuesta de cobertura cinematográfica para tu boda. 2 días de filmación con calidad de película.',
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <Layout>{children}</Layout>
       </body>

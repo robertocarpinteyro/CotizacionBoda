@@ -56,7 +56,7 @@ export const QRContainer = styled.div`
   padding: 1.25rem 1rem;
   gap: 0.75rem;
   border-radius: 0.5rem;
-  border: 1px dashed var(--White, #fff);
+  border: 1px dashed rgba(201, 169, 110, 0.4);
 `;
 
 export const QRImageCtn = styled.div``;
@@ -87,7 +87,7 @@ export const IconCtn = styled.div`
 
 export const FooterNavigation = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;

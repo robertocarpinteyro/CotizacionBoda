@@ -16,17 +16,21 @@ import {
   FeatureText,
   Highlight,
   CTAButton,
+  PaymentNote,
+  PriceNote,
 } from './styles';
 
 const features = [
-  '6 reels mensuales distribuidos estratégicamente',
-  '3 reels de auto con presentación de ficha técnica',
-  '3 reels UGC con actores/talentos (puede incluir influencers)',
-  '2 motion graphics promocionales',
-  'Sesión de fotos para posts y stories',
-  'Grabación en sucursal con contenido orgánico siguiendo tendencias',
-  'Potenciación de 2 comunidades (tu marca + talento/influencer)',
-  'Contenido optimizado para redes sociales',
+  'Cobertura completa de 2 días (4 y 5 de Agosto)',
+  'Getting ready, ceremonia y recepción (hasta 10 hrs por día)',
+  '2 Videógrafos profesionales',
+  '1 Operador de drone certificado',
+  '1 Staff de apoyo en producción',
+  '5 Reels de hasta 40 seg para redes sociales',
+  'Video 4K Highlight de 4-6 minutos',
+  'Cineminuto Highlights de 1 minuto',
+  'Entrega digital en landing page personalizada',
+  'Entrega en USB físico y digital',
 ];
 
 const PricingSection = () => {
@@ -36,13 +40,21 @@ const PricingSection = () => {
         <ContentGrid>
           <LeftColumn>
             <Title>
-              Inversión en tu <Highlight>Presencia Digital</Highlight>
+              Inversión en tu <Highlight>Historia de Amor</Highlight>
             </Title>
             <PriceTag>
-              <Price>$7,000</Price>
-              <Period>MXN / mes</Period>
+              <Price>$85,000</Price>
+              <Period>MXN</Period>
             </PriceTag>
-            <CTAButton as="a" href="https://wa.me/52222172882?text=Me%20interesa%20la%20propuesta%20de%20Oasis%20Creativa" target="_blank" rel="noopener noreferrer">Comenzar Ahora</CTAButton>
+            <PaymentNote>
+              <PriceNote>
+                <strong>Transferencia o Tarjeta de Crédito:</strong> $85,000 + IVA
+              </PriceNote>
+              <PriceNote>
+                <strong>Pago en Efectivo:</strong> $85,000 (sin IVA)
+              </PriceNote>
+            </PaymentNote>
+            <CTAButton as="a" href="https://wa.me/52222172882?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica" target="_blank" rel="noopener noreferrer">Apartar Ahora</CTAButton>
           </LeftColumn>
           <RightColumn>
             <FeaturesList>

@@ -7,19 +7,10 @@ import {
   LogoContainer,
   Nav,
   CallToActions,
-  AbsoluteLinks,
-  BurgerMenu,
 } from './styles';
-import raft_logo from '../../../../public/svgs/raft_logo.svg';
-import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
-import AnimatedLink from '@/components/Common/AnimatedLink';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { links, menu } from './constants';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <Wrapper>
       <Inner>
@@ -27,11 +18,21 @@ const Header = () => {
           <Image
             src="https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png"
             alt="Oasis Creativa"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             priority
           />
         </LogoContainer>
+        <Nav>
+          <a href="#cobertura">Cobertura</a>
+          <a href="#entregables">Entregables</a>
+          <a href="#demo">Demo</a>
+          <a href="#pricing">Inversión</a>
+          <a href="#faq">FAQ</a>
+        </Nav>
+        <CallToActions>
+          <GetStartedButton padding="0.75rem 1.5rem" href="#pricing">Ver Inversión</GetStartedButton>
+        </CallToActions>
       </Inner>
     </Wrapper>
   );

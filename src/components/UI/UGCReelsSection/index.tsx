@@ -1,104 +1,78 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import {
   Wrapper,
   Container,
   Header,
   Title,
   Subtitle,
-  VideoGrid,
-  VideoCard,
-  VideoThumbnail,
-  PlayButton,
-  FeaturesGrid,
-  FeatureCard,
-  FeatureIcon,
-  FeatureTitle,
-  FeatureDescription,
+  DeliverablesGrid,
+  DeliverableCard,
+  DeliverableImageContainer,
+  DeliverableContent,
+  DeliverableTitle,
+  DeliverableDescription,
+  DeliverableBadge,
 } from './styles';
 
-const ugcVideos = [
+const deliverables = [
   {
-    title: 'Reel UGC 1',
-    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152818/AQOVbgomwa4VYss2IHPFsuaEJ89uj8_rO20H9WW2W2FlNsued_jsPzFjHS8vrkaAQZ8FJBN2KJe1WOVqjQreaDQB5z6VZbi4OCau-qg_uqvlih.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    title: '5 Reels para Redes Sociales',
+    description: 'Hasta 40 segundos cada uno, optimizados para Instagram y TikTok. Contenido perfecto para compartir los mejores momentos de tu boda.',
+    badge: '5 Videos',
+    imageUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334370/91ebce557df7d97b598c4084a77f100f-xxlarge_w1dddt.jpg',
   },
   {
-    title: 'Reel UGC 2',
-    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152818/AQOuFfmzM2U6Gg_gfcGOgMAKT9Th9Owudiqnjac8Bg1hXLc_f8LJ4zLRKHwARVGCC1dfLTso3icHVWqw0XpofVQFupW8RXZUC6KTjKw_mrn7bs.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
+    title: 'Video 4K Highlight',
+    description: 'De 4 a 6 minutos con lo mejor de tu boda. Editado con calidad cinematográfica, color grading profesional y música que complementa cada momento.',
+    badge: '4-6 min',
+    imageUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg',
   },
   {
-    title: 'Reel UGC 3',
-    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152878/tiktok_panamotorspremiumoficial_7595977834129100050_qgxwdi.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
-  },
-];
-
-const features = [
-  {
-    icon: '🎬',
-    title: 'Contenido Auténtico',
-    description: 'Videos UGC que se sienten reales y generan mayor confianza con tu audiencia objetivo.',
+    title: 'Cineminuto Highlights',
+    description: 'Video de 1 minuto con los momentos más épicos de tu boda. Perfecto para compartir en redes sociales y revivir la emoción en un instante.',
+    badge: '1 min',
+    imageUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334142/9837c6f78552d14f441722a0f80cafb0-xxlarge_x6grtm.jpg',
   },
   {
-    icon: '📈',
-    title: 'Tendencias Actuales',
-    description: 'Aprovechamos las tendencias del momento para maximizar el alcance orgánico de tu contenido.',
-  },
-  {
-    icon: '💬',
-    title: 'Mayor Engagement',
-    description: 'El formato UGC genera 4x más interacción que el contenido tradicional de marca.',
+    title: 'Entrega Digital + USB Físico',
+    description: 'Landing page personalizada para ver y descargar tu contenido en cualquier momento, más una USB física con todo tu material en la más alta calidad.',
+    badge: 'Digital + Físico',
+    imageUrl: null,
   },
 ];
 
 const UGCReelsSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="entregables">
       <Container>
         <Header>
-          <Title>Reels UGC</Title>
-          <Subtitle>Grabamos con actores o talentos en sucursal videos &ldquo;orgánicos&rdquo; (UGC) trends</Subtitle>
+          <Title>Entregables</Title>
+          <Subtitle>Todo lo que recibirás con tu paquete cinematográfico</Subtitle>
         </Header>
-        <VideoGrid>
-          {ugcVideos.map((video, index) => (
-            <VideoCard key={index}>
-              <VideoThumbnail as="a" href={video.videoUrl} target="_blank" rel="noopener noreferrer">
-                <video
-                  src={video.videoUrl}
-                  poster={video.thumbnailUrl}
-                  muted
-                  loop
-                  playsInline
-                  crossOrigin="anonymous"
-                  preload="metadata"
-                  onMouseEnter={(e) => e.currentTarget.play().catch(() => {})}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.pause();
-                    e.currentTarget.currentTime = 0;
-                  }}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-                <PlayButton>
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M16 12L34 24L16 36V12Z" fill="white"/>
-                  </svg>
-                </PlayButton>
-              </VideoThumbnail>
-            </VideoCard>
+        <DeliverablesGrid>
+          {deliverables.map((item, index) => (
+            <DeliverableCard key={index}>
+              {item.imageUrl && (
+                <DeliverableImageContainer>
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </DeliverableImageContainer>
+              )}
+              <DeliverableContent>
+                <DeliverableBadge>{item.badge}</DeliverableBadge>
+                <DeliverableTitle>{item.title}</DeliverableTitle>
+                <DeliverableDescription>{item.description}</DeliverableDescription>
+              </DeliverableContent>
+            </DeliverableCard>
           ))}
-        </VideoGrid>
-
-        <FeaturesGrid>
-          {features.map((feature, index) => (
-            <FeatureCard key={index}>
-              <FeatureIcon>{feature.icon}</FeatureIcon>
-              <FeatureTitle>{feature.title}</FeatureTitle>
-              <FeatureDescription>{feature.description}</FeatureDescription>
-            </FeatureCard>
-          ))}
-        </FeaturesGrid>
+        </DeliverablesGrid>
       </Container>
     </Wrapper>
   );

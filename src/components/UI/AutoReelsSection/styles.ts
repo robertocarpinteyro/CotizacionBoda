@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   width: 100%;
   padding: 8rem 0;
-  background: var(--Background);
+  background: linear-gradient(180deg, #0f0f0f 0%, var(--Background) 100%);
 
   @media (max-width: 768px) {
     padding: 4rem 0;
@@ -51,15 +51,83 @@ export const Subtitle = styled.p`
   }
 `;
 
-export const VideoGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-bottom: 4rem;
+export const DemoVideoContainer = styled.div`
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 2px solid rgba(201, 169, 110, 0.3);
+  box-shadow: 0 20px 60px rgba(201, 169, 110, 0.1);
+  aspect-ratio: 16/9;
 
-  @media (max-width: 968px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 768px) {
+    margin-bottom: 4rem;
+    border-radius: 1rem;
   }
+`;
+
+export const DemoVideoFrame = styled.iframe`
+  width: 100%;
+  height: 100%;
+  border: none;
+`;
+
+export const PromoSection = styled.div`
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(201, 169, 110, 0.08) 0%, rgba(201, 169, 110, 0.02) 100%);
+  border-radius: 2rem;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(201, 169, 110, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+  }
+`;
+
+export const PromoBadge = styled.span`
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6.25rem;
+  background: var(--gold);
+  color: var(--black);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+`;
+
+export const PromoTitle = styled.h3`
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+`;
+
+export const PromoGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  position: relative;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -67,204 +135,63 @@ export const VideoGrid = styled.div`
   }
 `;
 
-export const VideoCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-8px);
-  }
-`;
-
-export const VideoThumbnail = styled.div`
-  width: 100%;
-  aspect-ratio: 9/16;
+export const PromoCard = styled.div`
+  padding: 2.5rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 1.5rem;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-  border: 2px solid var(--blue);
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  text-align: center;
   transition: all 0.3s ease;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
 
   &:hover {
-    border-color: var(--light-blue);
-    transform: scale(1.02);
-    box-shadow: 0 8px 24px rgba(44, 117, 251, 0.3);
-  }
-
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-`;
-
-export const PlayButton = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  backdrop-filter: blur(10px);
-  background: rgba(44, 117, 251, 0.3);
-  border: 2px solid var(--blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-
-  ${VideoThumbnail}:hover & {
-    background: rgba(44, 117, 251, 0.5);
-    border-color: var(--blue);
-    transform: translate(-50%, -50%) scale(1.1);
+    border-color: var(--gold);
+    transform: translateY(-4px);
   }
 
   @media (max-width: 768px) {
-    width: 64px;
-    height: 64px;
+    padding: 2rem 1.5rem;
 
-    svg {
-      width: 36px;
-      height: 36px;
+    h3 {
+      font-size: 1.25rem;
     }
   }
 `;
 
-export const Modal = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  padding: 2rem;
-  backdrop-filter: blur(10px);
-
-  @media (max-width: 768px) {
-    padding: 1rem;
-  }
-`;
-
-export const ModalContent = styled.div`
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  aspect-ratio: 9/16;
-  border-radius: 1rem;
-  overflow: hidden;
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
-`;
-
-export const CloseButton = styled.button`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: rgba(255, 0, 0, 0.6);
-    transform: rotate(90deg);
-  }
-
-  @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-  }
-`;
-
-export const ModalVideo = styled.video`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
-export const FeaturesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 4rem;
-
-  @media (max-width: 968px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-`;
-
-export const FeatureCard = styled.div`
-  text-align: center;
-  padding: 2rem;
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-
-  &:hover {
-    border-color: var(--blue);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(44, 117, 251, 0.2);
-  }
-
-  @media (max-width: 768px) {
-    padding: 1.5rem;
-  }
-`;
-
-export const FeatureIcon = styled.div`
-  font-size: 3rem;
-  margin-bottom: 1rem;
+export const PromoIcon = styled.div`
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1;
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 `;
 
-export const FeatureTitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 0.5rem;
-
-  @media (max-width: 768px) {
-    font-size: 1.25rem;
-  }
-`;
-
-export const FeatureDescription = styled.p`
+export const PromoDescription = styled.p`
   font-size: 1rem;
-  color: var(--light-gray);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
 
   @media (max-width: 768px) {
     font-size: 0.9rem;
   }
 `;
+
+// Keep unused exports for backward compatibility
+export const VideoGrid = styled.div``;
+export const VideoCard = styled.div``;
+export const VideoThumbnail = styled.div``;
+export const PlayButton = styled.div``;
+export const FeaturesGrid = styled.div``;
+export const FeatureCard = styled.div``;
+export const FeatureIcon = styled.div``;
+export const FeatureTitle = styled.h3``;
+export const FeatureDescription = styled.p``;

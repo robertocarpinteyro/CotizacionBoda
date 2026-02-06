@@ -12,34 +12,34 @@ import {
 
 const benefits = [
   {
-    icon: '🎯',
-    title: 'Estrategia Clara',
-    description: 'Plan de contenido mensual bien definido con objetivos específicos para cada tipo de video.',
+    icon: '🎬',
+    title: 'Calidad Cinematográfica',
+    description: 'Filmamos tu boda como si fuera una película. Cada toma, cada encuadre y cada transición está pensada para crear una obra de arte visual.',
   },
   {
-    icon: '📱',
-    title: 'Optimizado para Redes Sociales',
-    description: 'Todo el contenido está diseñado específicamente para maximizar el engagement en redes sociales.',
+    icon: '🎥',
+    title: 'Equipo Profesional de Cine',
+    description: 'Cámaras de cine, lentes cinematográficos, estabilizadores y equipo de iluminación profesional para lograr ese look de película.',
   },
   {
-    icon: '🎨',
-    title: 'Variedad de Formatos',
-    description: 'Desde reels cinematográficos hasta motion graphics, ofrecemos contenido diverso y atractivo.',
+    icon: '🚁',
+    title: 'Tomas Aéreas con Drone',
+    description: 'Operador de drone certificado para capturar tomas aéreas espectaculares de tu venue y ceremonia desde ángulos únicos.',
   },
   {
-    icon: '🚗',
-    title: 'Enfoque Automotriz',
-    description: 'Experiencia especializada en contenido para agencias de autos y concesionarios.',
+    icon: '🎞️',
+    title: 'Color Grading Profesional',
+    description: 'Post-producción con corrección de color cinematográfica que le da a tu video ese look de película de Hollywood.',
   },
   {
-    icon: '🌟',
-    title: 'Spots Instagrameables',
-    description: 'Capturamos tus vehículos en las mejores locaciones de la ciudad para contenido premium.',
+    icon: '🎵',
+    title: 'Diseño Sonoro',
+    description: 'Audio profesional con selección musical que complementa perfectamente cada momento emotivo de tu boda.',
   },
   {
-    icon: '💎',
-    title: 'Calidad Profesional',
-    description: 'Producción de alta calidad con equipo profesional y edición cinematográfica.',
+    icon: '✨',
+    title: 'Narrativa Emocional',
+    description: 'No solo grabamos momentos, contamos tu historia de amor. Cada video tiene una narrativa que te hará revivir las emociones.',
   },
 ];
 

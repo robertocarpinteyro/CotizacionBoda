@@ -43,7 +43,7 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.p`
   font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--gold);
   font-weight: 400;
 
   @media (max-width: 768px) {
@@ -53,7 +53,7 @@ export const Subtitle = styled.p`
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 
   @media (max-width: 768px) {
@@ -66,14 +66,14 @@ export const Card = styled.div`
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
   border-radius: 1rem;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(201, 169, 110, 0.15);
   transition: all 0.3s ease;
   position: relative;
 
   &:hover {
-    border-color: var(--green);
+    border-color: var(--gold);
     transform: translateY(-8px);
-    box-shadow: 0 12px 32px rgba(43, 137, 46, 0.2);
+    box-shadow: 0 12px 32px rgba(201, 169, 110, 0.15);
   }
 
   @media (max-width: 768px) {
@@ -84,7 +84,7 @@ export const Card = styled.div`
 export const CardNumber = styled.div`
   font-size: 3rem;
   font-weight: 800;
-  color: var(--green);
+  color: var(--gold);
   opacity: 0.2;
   position: absolute;
   top: 1rem;
@@ -98,6 +98,8 @@ export const CardNumber = styled.div`
 
 export const ImageContainer = styled.div`
   margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
 `;
 
 export const CardTitle = styled.h3`

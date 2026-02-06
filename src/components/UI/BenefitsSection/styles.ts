@@ -40,12 +40,12 @@ export const Card = styled.div`
   text-align: center;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(201, 169, 110, 0.1);
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(43, 137, 46, 0.3);
+    background: rgba(201, 169, 110, 0.05);
+    border-color: rgba(201, 169, 110, 0.3);
     transform: translateY(-8px);
   }
 

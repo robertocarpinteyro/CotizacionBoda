@@ -1,7 +1,5 @@
 'use client';
-import Image from 'next/image';
-import { Wrapper, Inner, Pill, HeroTextContainer } from './styles';
-import ic_chevron_right from '../../../../public/svgs/ic_chevron_right.svg';
+import { Wrapper, Inner, Pill, HeroTextContainer, DateBadge } from './styles';
 import { GetStartedButton } from '@/components';
 import MaskText from '@/components/Common/MaskText';
 import { useIsMobile } from '../../../../libs/useIsMobile';
@@ -17,6 +15,9 @@ const HeroSection = () => {
   return (
     <Wrapper>
       <Inner>
+        <Pill>
+          <span>Videografía Cinematográfica de Bodas</span>
+        </Pill>
         <HeroTextContainer>
           {isMobile ? (
             <>
@@ -30,7 +31,8 @@ const HeroSection = () => {
             </>
           )}
         </HeroTextContainer>
-        <GetStartedButton padding="1rem 2rem" href="#pricing">Ver Inversión</GetStartedButton>
+        <DateBadge>4 y 5 de Agosto</DateBadge>
+        <GetStartedButton padding="1.25rem 2.5rem" href="#pricing">Ver Inversión</GetStartedButton>
       </Inner>
     </Wrapper>
   );

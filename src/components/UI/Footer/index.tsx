@@ -1,26 +1,21 @@
 import Image from 'next/image';
-import raft_footer_logo from '../../../../public/svgs/raft_footer_logo.svg';
-import qr_code from '../../../../public/svgs/qr_code.svg';
-import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
-import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
-import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 
 const linksArr = [
   {
-    title: 'Servicios',
+    title: 'Secciones',
     links: [
-      { text: 'Contenido Digital', url: '#paquete' },
-      { text: 'Reels & Videos', url: '#paquete' },
-      { text: 'Motion Graphics', url: '#paquete' },
+      { text: 'Cobertura', url: '#cobertura' },
+      { text: 'Entregables', url: '#entregables' },
+      { text: 'Demo', url: '#demo' },
     ],
   },
   {
     title: 'Información',
     links: [
-      { text: 'Sobre la Propuesta', url: '#' },
-      { text: 'Portafolio', url: '#' },
-      { text: 'Contacto', url: 'mailto:contacto@oasiscreativa.com' },
+      { text: 'Inversión', url: '#pricing' },
+      { text: 'Preguntas Frecuentes', url: '#faq' },
+      { text: 'Contacto', url: 'https://wa.me/52222172882?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
     ],
   },
 ];
@@ -32,9 +27,7 @@ import {
   FooterMainContent,
   FooterMiddle,
   QRContainer,
-  QRImageCtn,
   TextCtn,
-  IconCtn,
   FooterNavigation,
   GridColumn,
   LinksContainer,
@@ -54,8 +47,8 @@ const Footer = () => {
           <FooterMiddle>
             <QRContainer>
               <TextCtn>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>¿Listo para impulsar tu presencia digital?</h3>
-                <p>Contáctanos para conocer más sobre nuestra propuesta de contenido para Zenith Motors.</p>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--gold)' }}>Tu boda merece ser una película</h3>
+                <p>Contáctanos para conocer más sobre nuestra propuesta de videografía cinematográfica para tu boda.</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -63,8 +56,8 @@ const Footer = () => {
                 <GridColumn key={i}>
                   <h3>{l.title}</h3>
                   <LinksContainer>
-                    {l.links.map((link, i) => (
-                      <li key={i}>
+                    {l.links.map((link, j) => (
+                      <li key={j}>
                         <a href={link.url} style={{ color: 'inherit', textDecoration: 'none' }}>
                           {link.text}
                         </a>
@@ -81,7 +74,7 @@ const Footer = () => {
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              2024 Propuesta Zenith Motors. Todos los derechos reservados.
+              2026 Oasis Creativa. Todos los derechos reservados.
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

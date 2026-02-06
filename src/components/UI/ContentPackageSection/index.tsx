@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import BathtubImage from '@/components/Common/BathtubImage';
+import Image from 'next/image';
 import {
   Wrapper,
   Container,
@@ -15,49 +15,49 @@ import {
   ImageContainer,
 } from './styles';
 
-const contentItems = [
+const coverageItems = [
   {
-    title: 'Reels de Auto (Ficha Técnica)',
-    description: '3 reels mensuales destacando las unidades en venta con presentación de ficha técnica.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06477_fzuo6v.jpg',
+    title: 'Getting Ready',
+    description: 'Capturamos cada detalle de la preparación: maquillaje, vestido, emociones y esos momentos íntimos previos a la ceremonia con calidad cinematográfica.',
   },
   {
-    title: 'Reels UGC con Actor/Talento',
-    description: '3 reels orgánicos grabados en sucursal con actores, talentos o influencers siguiendo tendencias.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080931/DSC01193_eevl9p.jpg',
+    title: 'Ceremonia',
+    description: 'Filmamos cada instante de la ceremonia con múltiples ángulos y tomas aéreas con drone, como si fuera una escena de película.',
   },
   {
-    title: 'Motion Graphics',
-    description: '2 motion graphics promocionales con animaciones profesionales para destacar ofertas y promociones.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_800,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.mp4',
+    title: 'Recepción',
+    description: 'Desde el primer baile hasta la fiesta, documentamos toda la celebración con iluminación y encuadres profesionales. Hasta 10 hrs de cobertura.',
   },
   {
-    title: 'Sesión de Fotos',
-    description: 'Sesión fotográfica profesional para posts y stories de alta calidad.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765086086/vlcsnap-2025-12-06-23h40m04s817_lahlyo.png',
+    title: 'Equipo Profesional',
+    description: '2 Videógrafos profesionales, 1 Operador de drone certificado y 1 Staff de apoyo. Todo el equipo necesario para una producción cinematográfica.',
+    imageUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg',
   },
 ];
 
 const ContentPackageSection = () => {
   return (
-    <Wrapper id="paquete">
+    <Wrapper id="cobertura">
       <Container>
         <Header>
-          <Title>Paquete de Contenido Mensual</Title>
-          <Subtitle>Contenido Estratégico para Redes Sociales</Subtitle>
+          <Title>Cobertura Completa del Evento</Title>
+          <Subtitle>2 Días de filmación cinematográfica &mdash; 4 y 5 de Agosto</Subtitle>
         </Header>
         <Grid>
-          {contentItems.map((item, index) => (
+          {coverageItems.map((item, index) => (
             <Card key={index}>
               <CardNumber>{String(index + 1).padStart(2, '0')}</CardNumber>
-              <ImageContainer>
-                <BathtubImage
-                  src={item.imageUrl}
-                  alt={item.title}
-                  aspectRatio="16/9"
-                  placeholder="Imagen pendiente"
-                />
-              </ImageContainer>
+              {item.imageUrl && (
+                <ImageContainer>
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    width={800}
+                    height={450}
+                    style={{ width: '100%', height: 'auto', borderRadius: '0.75rem', objectFit: 'cover' }}
+                  />
+                </ImageContainer>
+              )}
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </Card>

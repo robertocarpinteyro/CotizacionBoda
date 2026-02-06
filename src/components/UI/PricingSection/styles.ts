@@ -13,7 +13,7 @@ export const Wrapper = styled.section`
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(43, 137, 46, 0.5), transparent);
+    background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.5), transparent);
   }
 
   @media (max-width: 768px) {
@@ -63,7 +63,7 @@ export const Title = styled.h2`
 `;
 
 export const Highlight = styled.span`
-  color: var(--green);
+  color: var(--gold);
   position: relative;
 
   &::after {
@@ -73,7 +73,7 @@ export const Highlight = styled.span`
     left: 0;
     right: 0;
     height: 0.75rem;
-    background: var(--green);
+    background: var(--gold);
     opacity: 0.2;
     z-index: -1;
   }
@@ -106,13 +106,29 @@ export const Period = styled.div`
   }
 `;
 
+export const PaymentNote = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+`;
+
+export const PriceNote = styled.p`
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+
+  strong {
+    color: var(--gold);
+  }
+`;
+
 export const CTAButton = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 1.25rem 3rem;
-  background: var(--green);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--black);
   font-size: 1.125rem;
   font-weight: 600;
   border: none;
@@ -120,11 +136,12 @@ export const CTAButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   align-self: flex-start;
+  text-decoration: none;
 
   &:hover {
-    background: var(--emerald);
+    background: var(--light-gold);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(43, 137, 46, 0.3);
+    box-shadow: 0 8px 24px rgba(201, 169, 110, 0.3);
   }
 
   @media (max-width: 768px) {
@@ -153,8 +170,8 @@ export const FeatureIcon = styled.div`
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: rgba(43, 137, 46, 0.2);
-  color: var(--green);
+  background: rgba(201, 169, 110, 0.2);
+  color: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
