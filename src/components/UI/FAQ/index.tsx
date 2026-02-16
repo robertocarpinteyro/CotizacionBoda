@@ -13,15 +13,12 @@ import Image from 'next/image';
 import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import { MaskText } from '@/components';
 import { useIsMobile } from '../../../../libs/useIsMobile';
-import {
-  animate,
-  desktopHeaderPhrase,
-  faqData,
-  mobileHeaderPhrase,
-} from './constants';
+import { animate } from './constants';
+import { useLanguage } from '@/i18n';
 
 const FAQ = () => {
   const [openItem, setOpenItem] = useState<number | null>(null);
+  const { t } = useLanguage();
 
   const toggleItem = (index: number) => {
     setOpenItem(openItem === index ? null : index);
@@ -40,12 +37,12 @@ const FAQ = () => {
     <Wrapper id="faq">
       <Inner>
         {isMobile ? (
-          <MaskText phrases={mobileHeaderPhrase} tag="h1" />
+          <MaskText phrases={[...t.faq.headerMobile]} tag="h1" />
         ) : (
-          <MaskText phrases={desktopHeaderPhrase} tag="h1" />
+          <MaskText phrases={[...t.faq.headerDesktop]} tag="h1" />
         )}
         <Accordion ref={accordionRef}>
-          {faqData.map((item, index) => (
+          {t.faq.items.map((item, index) => (
             <AccordionItem
               variants={animate}
               initial="initial"
@@ -55,7 +52,7 @@ const FAQ = () => {
             >
               <Question onClick={() => toggleItem(index)}>
                 {item.question}
-                <Image src={ic_chevron_down} alt="cheveron down" />
+                <Image src={ic_chevron_down} alt="chevron down" />
               </Question>
               <AnimatePresence>
                 {openItem === index && (

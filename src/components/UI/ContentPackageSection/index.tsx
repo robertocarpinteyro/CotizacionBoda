@@ -14,43 +14,28 @@ import {
   CardDescription,
   ImageContainer,
 } from './styles';
+import { useLanguage } from '@/i18n';
 
-const coverageItems = [
-  {
-    title: 'Getting Ready',
-    description: 'Capturamos cada detalle de la preparación: maquillaje, vestido, emociones y esos momentos íntimos previos a la ceremonia con calidad cinematográfica.',
-  },
-  {
-    title: 'Ceremonia',
-    description: 'Filmamos cada instante de la ceremonia con múltiples ángulos y tomas aéreas con drone, como si fuera una escena de película.',
-  },
-  {
-    title: 'Recepción',
-    description: 'Desde el primer baile hasta la fiesta, documentamos toda la celebración con iluminación y encuadres profesionales. Hasta 10 hrs de cobertura.',
-  },
-  {
-    title: 'Equipo Profesional',
-    description: '2 Videógrafos profesionales, 1 Operador de drone certificado y 1 Staff de apoyo. Todo el equipo necesario para una producción cinematográfica.',
-    imageUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg',
-  },
-];
+const teamImageUrl = 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg';
 
 const ContentPackageSection = () => {
+  const { t } = useLanguage();
+
   return (
     <Wrapper id="cobertura">
       <Container>
         <Header>
-          <Title>Cobertura Completa del Evento</Title>
-          <Subtitle>2 Días de filmación cinematográfica &mdash; 4 y 5 de Agosto</Subtitle>
+          <Title>{t.coverage.title}</Title>
+          <Subtitle>{t.coverage.subtitle}</Subtitle>
         </Header>
         <Grid>
-          {coverageItems.map((item, index) => (
+          {t.coverage.items.map((item, index) => (
             <Card key={index}>
               <CardNumber>{String(index + 1).padStart(2, '0')}</CardNumber>
-              {item.imageUrl && (
+              {index === 3 && (
                 <ImageContainer>
                   <Image
-                    src={item.imageUrl}
+                    src={teamImageUrl}
                     alt={item.title}
                     width={800}
                     height={450}

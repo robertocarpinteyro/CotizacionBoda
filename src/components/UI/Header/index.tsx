@@ -7,10 +7,14 @@ import {
   LogoContainer,
   Nav,
   CallToActions,
+  LangToggle,
 } from './styles';
 import { GetStartedButton } from '@/components';
+import { useLanguage } from '@/i18n';
 
 const Header = () => {
+  const { t, locale, toggleLanguage } = useLanguage();
+
   return (
     <Wrapper>
       <Inner>
@@ -24,14 +28,17 @@ const Header = () => {
           />
         </LogoContainer>
         <Nav>
-          <a href="#cobertura">Cobertura</a>
-          <a href="#entregables">Entregables</a>
-          <a href="#demo">Demo</a>
-          <a href="#pricing">Inversión</a>
-          <a href="#faq">FAQ</a>
+          <a href="#cobertura">{t.header.coverage}</a>
+          <a href="#entregables">{t.header.deliverables}</a>
+          <a href="#demo">{t.header.demo}</a>
+          <a href="#pricing">{t.header.investment}</a>
+          <a href="#faq">{t.header.faq}</a>
         </Nav>
         <CallToActions>
-          <GetStartedButton padding="0.75rem 1.5rem" href="#pricing">Ver Inversión</GetStartedButton>
+          <LangToggle onClick={toggleLanguage}>
+            {locale === 'es' ? 'EN' : 'ES'}
+          </LangToggle>
+          <GetStartedButton padding="0.75rem 1.5rem" href="#pricing">{t.header.cta}</GetStartedButton>
         </CallToActions>
       </Inner>
     </Wrapper>

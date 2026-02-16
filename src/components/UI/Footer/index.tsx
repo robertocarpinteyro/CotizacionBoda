@@ -1,24 +1,7 @@
+'use client';
 import Image from 'next/image';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
-
-const linksArr = [
-  {
-    title: 'Secciones',
-    links: [
-      { text: 'Cobertura', url: '#cobertura' },
-      { text: 'Entregables', url: '#entregables' },
-      { text: 'Demo', url: '#demo' },
-    ],
-  },
-  {
-    title: 'Información',
-    links: [
-      { text: 'Inversión', url: '#pricing' },
-      { text: 'Preguntas Frecuentes', url: '#faq' },
-      { text: 'Contacto', url: 'https://wa.me/52222172882?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
-    ],
-  },
-];
+import { useLanguage } from '@/i18n';
 
 import {
   Wrapper,
@@ -37,6 +20,27 @@ import {
 } from './styles';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
+  const linksArr = [
+    {
+      title: t.footer.sections,
+      links: [
+        { text: t.header.coverage, url: '#cobertura' },
+        { text: t.header.deliverables, url: '#entregables' },
+        { text: t.header.demo, url: '#demo' },
+      ],
+    },
+    {
+      title: t.footer.information,
+      links: [
+        { text: t.header.investment, url: '#pricing' },
+        { text: t.header.faq, url: '#faq' },
+        { text: t.footer.contact, url: 'https://wa.me/52222172882?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
+      ],
+    },
+  ];
+
   return (
     <Wrapper>
       <Inner>
@@ -47,8 +51,8 @@ const Footer = () => {
           <FooterMiddle>
             <QRContainer>
               <TextCtn>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--gold)' }}>Tu boda merece ser una película</h3>
-                <p>Contáctanos para conocer más sobre nuestra propuesta de videografía cinematográfica para tu boda.</p>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--gold)' }}>{t.footer.tagline}</h3>
+                <p>{t.footer.description}</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -70,11 +74,11 @@ const Footer = () => {
           </FooterMiddle>
           <FooterBottom>
             <Translator>
-              <h3>Español (México)</h3>
+              <h3>{t.footer.lang}</h3>
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              2026 Oasis Creativa. Todos los derechos reservados.
+              {t.footer.copyright}
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>
