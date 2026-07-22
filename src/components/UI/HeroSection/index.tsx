@@ -1,36 +1,35 @@
 'use client';
-import Image from 'next/image';
-import { Wrapper, Inner, Pill, HeroTextContainer } from './styles';
-import ic_chevron_right from '../../../../public/svgs/ic_chevron_right.svg';
+import { Wrapper, Inner, Pill, HeroTextContainer, DateBadge } from './styles';
 import { GetStartedButton } from '@/components';
 import MaskText from '@/components/Common/MaskText';
 import { useIsMobile } from '../../../../libs/useIsMobile';
-import {
-  mobileParagraphPhrases,
-  mobilePhrases,
-  paragraphPhrases,
-  phrases,
-} from './constants';
+import { useLanguage } from '@/i18n';
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
+  const { t } = useLanguage();
+
   return (
     <Wrapper>
       <Inner>
+        <Pill>
+          <span>{t.hero.pill}</span>
+        </Pill>
         <HeroTextContainer>
           {isMobile ? (
             <>
-              <MaskText phrases={mobilePhrases} tag="h1" />
-              <MaskText phrases={mobileParagraphPhrases} tag="p" />
+              <MaskText phrases={[...t.hero.mobilePhrases]} tag="h1" />
+              <MaskText phrases={[...t.hero.mobileParagraphPhrases]} tag="p" />
             </>
           ) : (
             <>
-              <MaskText phrases={phrases} tag="h1" />
-              <MaskText phrases={paragraphPhrases} tag="p" />
+              <MaskText phrases={[...t.hero.phrases]} tag="h1" />
+              <MaskText phrases={[...t.hero.paragraphPhrases]} tag="p" />
             </>
           )}
         </HeroTextContainer>
-        <GetStartedButton padding="1rem 2rem" href="#pricing">Ver Inversión</GetStartedButton>
+        <DateBadge>{t.hero.dateBadge}</DateBadge>
+        <GetStartedButton padding="1.25rem 2.5rem" href="#pricing">{t.hero.cta}</GetStartedButton>
       </Inner>
     </Wrapper>
   );

@@ -4,8 +4,14 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
   padding: 1rem 0;
-  background-color: var(--blue);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(10, 9, 8, 0.95);
+  border-bottom: 0.5px solid rgba(201, 169, 110, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 
   @media (max-width: 768px) {
     padding: 0.75rem 0;
@@ -37,22 +43,6 @@ export const BurgerMenu = styled.div`
   @media (max-width: 768px) {
     display: block;
     padding: 0.5rem;
-
-    div {
-      position: absolute;
-      background: var(--emerald);
-      width: '250px';
-      height: '300px';
-      border-radius: 25px;
-      z-index: 1;
-      top: 50px;
-    }
-
-    img {
-      position: relative;
-      z-index: 2;
-      object-fit: cover;
-    }
   }
 `;
 
@@ -61,7 +51,6 @@ export const Nav = styled.div`
   align-items: center;
   gap: 3.75rem;
   position: relative;
-  margin-right: -6.3rem;
 
   a {
     color: var(--link-color);
@@ -70,59 +59,41 @@ export const Nav = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: absolute;
-    top: 60px;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-    right: 120px;
-    z-index: 3;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
-
-    &.active {
-      opacity: 1;
-      visibility: visible;
-    }
+    display: none;
   }
 `;
 
-export const AbsoluteLinks = styled(Link)`
-  position: absolute;
-  top: 40px;
-  color: var(--link-color);
-  font-size: 1rem;
-  font-weight: 400;
-`;
+export const AbsoluteLinks = styled(Link)``;
 
 export const CallToActions = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
 
-  div {
-    span {
-      color: var(--white);
-      font-size: 1rem;
-      font-weight: 600;
-    }
-  }
-
   @media (max-width: 768px) {
-    position: absolute;
-    top: 220px;
-    z-index: 3;
-    right: 50px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0.5s;
+    gap: 0.5rem;
+  }
+`;
 
-    &.active {
-      opacity: 1;
-      visibility: visible;
-    }
+export const LangToggle = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 110, 0.4);
+  background: rgba(201, 169, 110, 0.1);
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(201, 169, 110, 0.2);
+    border-color: var(--gold);
+    transform: scale(1.05);
   }
 `;

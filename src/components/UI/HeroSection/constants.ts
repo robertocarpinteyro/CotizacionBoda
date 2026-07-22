@@ -1,13 +1,13 @@
 // For desktop
-export const phrases = ['Propuesta de Contenido', 'Zenith Motors'];
+export const phrases = ['Tu Boda,', 'Nuestra Película'];
 export const paragraphPhrases = [
-  'Estrategia integral de contenido digital para potenciar',
-  'la presencia de Zenith Motors en redes sociales.',
+  'Cobertura cinematográfica de 2 días para el momento',
+  'más importante de tu vida. 4 y 5 de Agosto.',
 ];
 
 // For mobile
-export const mobilePhrases = ['Propuesta de', 'Contenido Zenith Motors'];
+export const mobilePhrases = ['Tu Boda,', 'Nuestra Película'];
 export const mobileParagraphPhrases = [
-  'Estrategia integral de contenido digital',
-  'para potenciar tu presencia en redes sociales.',
+  'Cobertura cinematográfica de 2 días',
+  'para el momento más importante de tu vida.',
 ];

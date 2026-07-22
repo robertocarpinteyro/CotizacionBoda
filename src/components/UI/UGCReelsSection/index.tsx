@@ -1,104 +1,61 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import {
   Wrapper,
   Container,
   Header,
   Title,
   Subtitle,
-  VideoGrid,
-  VideoCard,
-  VideoThumbnail,
-  PlayButton,
-  FeaturesGrid,
-  FeatureCard,
-  FeatureIcon,
-  FeatureTitle,
-  FeatureDescription,
+  DeliverablesGrid,
+  DeliverableCard,
+  DeliverableImageContainer,
+  DeliverableContent,
+  DeliverableTitle,
+  DeliverableDescription,
+  DeliverableBadge,
 } from './styles';
+import { useLanguage } from '@/i18n';
 
-const ugcVideos = [
-  {
-    title: 'Reel UGC 1',
-    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152818/AQOVbgomwa4VYss2IHPFsuaEJ89uj8_rO20H9WW2W2FlNsued_jsPzFjHS8vrkaAQZ8FJBN2KJe1WOVqjQreaDQB5z6VZbi4OCau-qg_uqvlih.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
-  },
-  {
-    title: 'Reel UGC 2',
-    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152818/AQOuFfmzM2U6Gg_gfcGOgMAKT9Th9Owudiqnjac8Bg1hXLc_f8LJ4zLRKHwARVGCC1dfLTso3icHVWqw0XpofVQFupW8RXZUC6KTjKw_mrn7bs.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
-  },
-  {
-    title: 'Reel UGC 3',
-    videoUrl: 'https://res.cloudinary.com/dxcr9utre/video/upload/v1770152878/tiktok_panamotorspremiumoficial_7595977834129100050_qgxwdi.mp4',
-    thumbnailUrl: 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png',
-  },
-];
-
-const features = [
-  {
-    icon: '🎬',
-    title: 'Contenido Auténtico',
-    description: 'Videos UGC que se sienten reales y generan mayor confianza con tu audiencia objetivo.',
-  },
-  {
-    icon: '📈',
-    title: 'Tendencias Actuales',
-    description: 'Aprovechamos las tendencias del momento para maximizar el alcance orgánico de tu contenido.',
-  },
-  {
-    icon: '💬',
-    title: 'Mayor Engagement',
-    description: 'El formato UGC genera 4x más interacción que el contenido tradicional de marca.',
-  },
+const deliverableImages = [
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/e2895da1b7d6873ca6dbbf0506938e62-xlarge_hxpovb.jpg',
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/0eace357ea4396e95a2d264cae0af972-xxlarge_gl5hfh.jpg',
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/a4253ba2c762584d3879ded2c548e31e-xlarge_l6djtf.jpg',
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/d6be689b31c87cf7fec63cb0647500ee-xlarge_etaspe.jpg',
 ];
 
 const UGCReelsSection = () => {
+  const { t } = useLanguage();
+
   return (
-    <Wrapper>
+    <Wrapper id="entregables">
       <Container>
         <Header>
-          <Title>Reels UGC</Title>
-          <Subtitle>Grabamos con actores o talentos en sucursal videos &ldquo;orgánicos&rdquo; (UGC) trends</Subtitle>
+          <Title>{t.deliverables.title}</Title>
+          <Subtitle>{t.deliverables.subtitle}</Subtitle>
         </Header>
-        <VideoGrid>
-          {ugcVideos.map((video, index) => (
-            <VideoCard key={index}>
-              <VideoThumbnail as="a" href={video.videoUrl} target="_blank" rel="noopener noreferrer">
-                <video
-                  src={video.videoUrl}
-                  poster={video.thumbnailUrl}
-                  muted
-                  loop
-                  playsInline
-                  crossOrigin="anonymous"
-                  preload="metadata"
-                  onMouseEnter={(e) => e.currentTarget.play().catch(() => {})}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.pause();
-                    e.currentTarget.currentTime = 0;
-                  }}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
-                <PlayButton>
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                    <path d="M16 12L34 24L16 36V12Z" fill="white"/>
-                  </svg>
-                </PlayButton>
-              </VideoThumbnail>
-            </VideoCard>
+        <DeliverablesGrid>
+          {t.deliverables.items.map((item, index) => (
+            <DeliverableCard key={index}>
+              {deliverableImages[index] && (
+                <DeliverableImageContainer>
+                  <Image
+                    src={deliverableImages[index]!}
+                    alt={item.title}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </DeliverableImageContainer>
+              )}
+              <DeliverableContent>
+                <DeliverableBadge>{item.badge}</DeliverableBadge>
+                <DeliverableTitle>{item.title}</DeliverableTitle>
+                <DeliverableDescription>{item.description}</DeliverableDescription>
+              </DeliverableContent>
+            </DeliverableCard>
           ))}
-        </VideoGrid>
-
-        <FeaturesGrid>
-          {features.map((feature, index) => (
-            <FeatureCard key={index}>
-              <FeatureIcon>{feature.icon}</FeatureIcon>
-              <FeatureTitle>{feature.title}</FeatureTitle>
-              <FeatureDescription>{feature.description}</FeatureDescription>
-            </FeatureCard>
-          ))}
-        </FeaturesGrid>
+        </DeliverablesGrid>
       </Container>
     </Wrapper>
   );

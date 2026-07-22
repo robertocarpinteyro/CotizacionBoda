@@ -1,29 +1,7 @@
+'use client';
 import Image from 'next/image';
-import raft_footer_logo from '../../../../public/svgs/raft_footer_logo.svg';
-import qr_code from '../../../../public/svgs/qr_code.svg';
-import ic_google_playstore from '../../../../public/svgs/ic_google_playstore.svg';
-import ic_baseline_apple from '../../../../public/svgs/ic_baseline_apple.svg';
-import ic_chevron_down from '../../../../public/svgs/ic_chevron_down.svg';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
-
-const linksArr = [
-  {
-    title: 'Servicios',
-    links: [
-      { text: 'Contenido Digital', url: '#paquete' },
-      { text: 'Reels & Videos', url: '#paquete' },
-      { text: 'Motion Graphics', url: '#paquete' },
-    ],
-  },
-  {
-    title: 'Información',
-    links: [
-      { text: 'Sobre la Propuesta', url: '#' },
-      { text: 'Portafolio', url: '#' },
-      { text: 'Contacto', url: 'mailto:contacto@oasiscreativa.com' },
-    ],
-  },
-];
+import { useLanguage } from '@/i18n';
 
 import {
   Wrapper,
@@ -32,9 +10,7 @@ import {
   FooterMainContent,
   FooterMiddle,
   QRContainer,
-  QRImageCtn,
   TextCtn,
-  IconCtn,
   FooterNavigation,
   GridColumn,
   LinksContainer,
@@ -44,6 +20,27 @@ import {
 } from './styles';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
+  const linksArr = [
+    {
+      title: t.footer.sections,
+      links: [
+        { text: t.header.coverage, url: '#cobertura' },
+        { text: t.header.deliverables, url: '#entregables' },
+        { text: t.header.demo, url: '#demo' },
+      ],
+    },
+    {
+      title: t.footer.information,
+      links: [
+        { text: t.header.investment, url: '#pricing' },
+        { text: t.header.faq, url: '#faq' },
+        { text: t.footer.contact, url: 'https://wa.me/522211102997?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
+      ],
+    },
+  ];
+
   return (
     <Wrapper>
       <Inner>
@@ -54,8 +51,8 @@ const Footer = () => {
           <FooterMiddle>
             <QRContainer>
               <TextCtn>
-                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>¿Listo para impulsar tu presencia digital?</h3>
-                <p>Contáctanos para conocer más sobre nuestra propuesta de contenido para Zenith Motors.</p>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem', color: 'var(--gold)' }}>{t.footer.tagline}</h3>
+                <p>{t.footer.description}</p>
               </TextCtn>
             </QRContainer>
             <FooterNavigation>
@@ -63,8 +60,8 @@ const Footer = () => {
                 <GridColumn key={i}>
                   <h3>{l.title}</h3>
                   <LinksContainer>
-                    {l.links.map((link, i) => (
-                      <li key={i}>
+                    {l.links.map((link, j) => (
+                      <li key={j}>
                         <a href={link.url} style={{ color: 'inherit', textDecoration: 'none' }}>
                           {link.text}
                         </a>
@@ -77,11 +74,11 @@ const Footer = () => {
           </FooterMiddle>
           <FooterBottom>
             <Translator>
-              <h3>Español (México)</h3>
+              <h3>{t.footer.lang}</h3>
             </Translator>
             <CopyRight>
               <Image src={ic_copyright} alt="copyright svg" />
-              2024 Propuesta Zenith Motors. Todos los derechos reservados.
+              {t.footer.copyright}
             </CopyRight>
           </FooterBottom>
         </FooterMainContent>

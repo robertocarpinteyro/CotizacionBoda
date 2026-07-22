@@ -4,13 +4,19 @@ const styled = { createGlobalStyle };
 
 export const GlobalStyles = styled.createGlobalStyle`
   :root {
-    --Background: #070606;
+    --Background: #0a0908;
     --white: #fff;
     --black: #000000;
     --light-gray: #dcdcdc;
     --link-color: #bdbdbd;
     --blue: #2c75fb;
     --light-blue: #5a94fc;
+    --gold: #c9a96e;
+    --light-gold: #d4b87a;
+    --dark-gold: #a88c55;
+    --cream: #f5e6cc;
+    --green: #c9a96e;
+    --emerald: #d4b87a;
   }
 
   * {
@@ -24,7 +30,7 @@ export const GlobalStyles = styled.createGlobalStyle`
   body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'EB Garamond', 'Josefin Sans', serif;
     background-color: var(--Background);
     color: var(--white);
 

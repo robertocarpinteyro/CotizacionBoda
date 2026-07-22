@@ -7,19 +7,14 @@ import {
   LogoContainer,
   Nav,
   CallToActions,
-  AbsoluteLinks,
-  BurgerMenu,
+  LangToggle,
 } from './styles';
-import raft_logo from '../../../../public/svgs/raft_logo.svg';
-import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
-import AnimatedLink from '@/components/Common/AnimatedLink';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { links, menu } from './constants';
+import { useLanguage } from '@/i18n';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { t, locale, toggleLanguage } = useLanguage();
+
   return (
     <Wrapper>
       <Inner>
@@ -27,11 +22,24 @@ const Header = () => {
           <Image
             src="https://res.cloudinary.com/dxcr9utre/image/upload/v1770147500/Iso_uqpfwv.png"
             alt="Oasis Creativa"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             priority
           />
         </LogoContainer>
+        <Nav>
+          <a href="#cobertura">{t.header.coverage}</a>
+          <a href="#entregables">{t.header.deliverables}</a>
+          <a href="#demo">{t.header.demo}</a>
+          <a href="#pricing">{t.header.investment}</a>
+          <a href="#faq">{t.header.faq}</a>
+        </Nav>
+        <CallToActions>
+          <LangToggle onClick={toggleLanguage}>
+            {locale === 'es' ? 'EN' : 'ES'}
+          </LangToggle>
+          <GetStartedButton padding="0.75rem 1.5rem" href="#pricing">{t.header.cta}</GetStartedButton>
+        </CallToActions>
       </Inner>
     </Wrapper>
   );

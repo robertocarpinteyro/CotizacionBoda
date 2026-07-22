@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import BathtubImage from '@/components/Common/BathtubImage';
+import Image from 'next/image';
 import {
   Wrapper,
   Container,
@@ -14,50 +14,35 @@ import {
   CardDescription,
   ImageContainer,
 } from './styles';
+import { useLanguage } from '@/i18n';
 
-const contentItems = [
-  {
-    title: 'Reels de Auto (Ficha Técnica)',
-    description: '3 reels mensuales destacando las unidades en venta con presentación de ficha técnica.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080933/DSC06477_fzuo6v.jpg',
-  },
-  {
-    title: 'Reels UGC con Actor/Talento',
-    description: '3 reels orgánicos grabados en sucursal con actores, talentos o influencers siguiendo tendencias.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765080931/DSC01193_eevl9p.jpg',
-  },
-  {
-    title: 'Motion Graphics',
-    description: '2 motion graphics promocionales con animaciones profesionales para destacar ofertas y promociones.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/video/upload/q_auto,w_800,f_auto/v1765085774/storydiapadre_Cuadrado_i4t0qb.mp4',
-  },
-  {
-    title: 'Sesión de Fotos',
-    description: 'Sesión fotográfica profesional para posts y stories de alta calidad.',
-    imageUrl: 'https://res.cloudinary.com/dwrtldhxd/image/upload/w_800,q_auto,f_auto/v1765086086/vlcsnap-2025-12-06-23h40m04s817_lahlyo.png',
-  },
-];
+const teamImageUrl = 'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/WhatsApp_Image_2026-02-05_at_5.21.14_PM_ayu139.jpg';
 
 const ContentPackageSection = () => {
+  const { t } = useLanguage();
+
   return (
-    <Wrapper id="paquete">
+    <Wrapper id="cobertura">
       <Container>
         <Header>
-          <Title>Paquete de Contenido Mensual</Title>
-          <Subtitle>Contenido Estratégico para Redes Sociales</Subtitle>
+          <Title>{t.coverage.title}</Title>
+          <Subtitle>{t.coverage.subtitle}</Subtitle>
         </Header>
         <Grid>
-          {contentItems.map((item, index) => (
+          {t.coverage.items.map((item, index) => (
             <Card key={index}>
               <CardNumber>{String(index + 1).padStart(2, '0')}</CardNumber>
-              <ImageContainer>
-                <BathtubImage
-                  src={item.imageUrl}
-                  alt={item.title}
-                  aspectRatio="16/9"
-                  placeholder="Imagen pendiente"
-                />
-              </ImageContainer>
+              {index === 3 && (
+                <ImageContainer>
+                  <Image
+                    src={teamImageUrl}
+                    alt={item.title}
+                    width={800}
+                    height={450}
+                    style={{ width: '100%', height: 'auto', borderRadius: '0.75rem', objectFit: 'cover' }}
+                  />
+                </ImageContainer>
+              )}
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </Card>

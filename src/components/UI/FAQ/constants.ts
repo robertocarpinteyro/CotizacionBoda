@@ -19,33 +19,38 @@ export const animate = {
 
 export const faqData: FAQItem[] = [
   {
-    question: '¿Qué incluye el paquete de contenido mensual?',
+    question: '¿Cuánto es el anticipo para apartar la fecha?',
     answer:
-      'El paquete incluye 6 reels mensuales distribuidos estratégicamente: 3 reels de auto con presentación de ficha técnica y 3 reels UGC grabados en sucursal con actores, talentos o influencers siguiendo las tendencias actuales de redes sociales.',
+      'Se requiere un anticipo del 50% para apartar la fecha. El 50% restante se liquida antes del evento. Al apartar este mes, recibes de regalo 30 fotografías profesionales e invitaciones digitales para tus invitados.',
   },
   {
-    question: '¿Cómo funcionan las colaboraciones con actores/talentos?',
+    question: '¿Qué incluye la cobertura de 2 días?',
     answer:
-      'Los reels UGC se graban en tu sucursal con actores, talentos o influencers, creando contenido orgánico y auténtico que sigue las tendencias actuales. Esto potencia la visualización juntando 2 comunidades: tu marca y el talento/influencer colaborador.',
+      'La cobertura incluye los 2 días completos (4 y 5 de Agosto). Cubrimos desde el getting ready hasta la recepción, con hasta 10 horas de filmación por día. El equipo completo asiste ambos días: 2 videógrafos, 1 operador de drone y 1 staff.',
   },
   {
-    question: '¿Dónde se graban los reels UGC?',
+    question: '¿Cuál es el tiempo de entrega del material?',
     answer:
-      'Los reels UGC se graban directamente en tu sucursal con actores, talentos o influencers, creando contenido auténtico y orgánico que genera mayor conexión con tu audiencia y sigue las tendencias del momento.',
+      'Los reels para redes sociales se entregan en las primeras semanas después del evento. El video highlight 4K y el cineminuto se entregan en un plazo de 4 a 8 semanas, dependiendo de la complejidad de la edición cinematográfica.',
   },
   {
-    question: '¿Cuál es el tiempo de entrega del contenido?',
+    question: '¿Qué calidad de video manejan?',
     answer:
-      'El contenido se distribuye a lo largo del mes de manera estratégica. Los 6 reels se entregan según el calendario acordado para mantener una presencia constante en redes sociales y maximizar el engagement con tu audiencia.',
+      'Filmamos en resolución 4K con cámaras y lentes cinematográficos profesionales. La post-producción incluye color grading cinematográfico, diseño sonoro profesional y edición narrativa que le da a tu video ese look y sentimiento de película de cine.',
   },
   {
-    question: '¿El contenido está optimizado para redes sociales?',
+    question: '¿Cómo funciona la entrega digital?',
     answer:
-      'Sí, todo el contenido está diseñado específicamente para redes sociales. Los reels están en formato vertical optimizado para Instagram y TikTok, con la mejor calidad visual y siguiendo las tendencias actuales para maximizar alcance y engagement.',
+      'Recibes una landing page personalizada donde puedes ver y descargar todo tu contenido en cualquier momento. Además, recibes una USB física con todos los archivos en la más alta calidad para que conserves tu recuerdo para siempre.',
   },
   {
-    question: '¿La inversión incluye el presupuesto de pauta publicitaria?',
+    question: '¿Qué son las invitaciones digitales incluidas en la promoción?',
     answer:
-      'No, el presupuesto de pauta publicitaria para Meta Ads no está incluido en la inversión mensual. Nosotros diseñamos y gestionamos las campañas publicitarias, y te sugerimos una cantidad óptima de inversión en pauta que consideramos adecuada para alcanzar tus objetivos y maximizar resultados.',
+      'Es una landing page elegante y personalizada con los detalles de tu boda y un formulario de asistencia. Tus invitados reciben la invitación por correo electrónico, confirman su asistencia directamente en la página y tú puedes dar seguimiento a las confirmaciones de forma sencilla.',
+  },
+  {
+    question: '¿La inversión incluye IVA?',
+    answer:
+      'Si el pago es por transferencia bancaria o tarjeta de crédito, la inversión es de $85,000 MXN + IVA. Si el pago es en efectivo, el precio es de $85,000 MXN sin IVA.',
   },
 ];
