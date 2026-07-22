@@ -63,6 +63,10 @@ export const DeliverablesGrid = styled.div`
 `;
 
 export const DeliverableCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 340px;
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
   border-radius: 1.5rem;
   overflow: hidden;
@@ -74,16 +78,30 @@ export const DeliverableCard = styled.div`
     transform: translateY(-4px);
     box-shadow: 0 12px 32px rgba(201, 169, 110, 0.15);
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    min-height: 0;
+  }
 `;
 
 export const DeliverableImageContainer = styled.div`
   position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
+  flex-shrink: 0;
+  width: 42%;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    aspect-ratio: 4/5;
+  }
 `;
 
 export const DeliverableContent = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 2rem;
 
   @media (max-width: 768px) {
