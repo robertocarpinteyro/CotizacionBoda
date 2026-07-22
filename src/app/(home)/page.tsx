@@ -5,6 +5,7 @@ import {
   UGCReelsSection,
   AutoReelsSection,
   PricingSection,
+  BookingSection,
   FAQ,
 } from '@/components';
 
@@ -17,6 +18,7 @@ export default function Home() {
       <UGCReelsSection />
       <AutoReelsSection />
       <PricingSection />
+      <BookingSection />
       <FAQ />
     </main>
   );

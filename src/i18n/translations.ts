@@ -9,6 +9,7 @@ export const translations = {
       demo: 'Demo',
       investment: 'Inversión',
       faq: 'FAQ',
+      booking: 'Agenda',
       cta: 'Ver Inversión',
     },
 
@@ -211,6 +212,28 @@ export const translations = {
       ],
     },
 
+    // Booking (BookingSection)
+    booking: {
+      title: 'Agenda tu Cita',
+      subtitle: 'Elige la fecha de tu boda y déjanos tus datos. Te contactamos para apartar tu día.',
+      fields: {
+        name: 'Nombre completo',
+        weddingDate: 'Fecha de la boda',
+        location: 'Lugar / Ciudad',
+        package: 'Paquete de interés',
+        phone: 'WhatsApp',
+        email: 'Correo electrónico',
+        message: 'Mensaje (opcional)',
+      },
+      packagePlaceholder: 'Selecciona un paquete',
+      packageOptions: ['Esencial', 'Completo', 'Aún no lo sé'],
+      submit: 'Solicitar Fecha',
+      submitting: 'Enviando...',
+      successTitle: '¡Solicitud enviada!',
+      successMessage: 'Gracias. Te contactaremos muy pronto para confirmar tu fecha.',
+      errorMessage: 'Ocurrió un error. Intenta de nuevo o escríbenos por WhatsApp.',
+    },
+
     // Footer
     footer: {
       tagline: 'Tu boda merece ser una película',
@@ -231,6 +254,7 @@ export const translations = {
       demo: 'Demo',
       investment: 'Investment',
       faq: 'FAQ',
+      booking: 'Book',
       cta: 'View Investment',
     },
 
@@ -431,6 +455,28 @@ export const translations = {
           answer: 'The Essential package is priced tax-free. If you need an invoice, the corresponding IVA (tax) is added. Please check the conditions when reserving your date.',
         },
       ],
+    },
+
+    // Booking (BookingSection)
+    booking: {
+      title: 'Book Your Appointment',
+      subtitle: 'Pick your wedding date and leave us your details. We will contact you to reserve your day.',
+      fields: {
+        name: 'Full name',
+        weddingDate: 'Wedding date',
+        location: 'Location / City',
+        package: 'Package of interest',
+        phone: 'WhatsApp',
+        email: 'Email',
+        message: 'Message (optional)',
+      },
+      packagePlaceholder: 'Select a package',
+      packageOptions: ['Essential', 'Complete', "I'm not sure yet"],
+      submit: 'Request Date',
+      submitting: 'Sending...',
+      successTitle: 'Request sent!',
+      successMessage: 'Thank you. We will contact you very soon to confirm your date.',
+      errorMessage: 'Something went wrong. Please try again or message us on WhatsApp.',
     },
 
     // Footer

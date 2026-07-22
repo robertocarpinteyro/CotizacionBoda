@@ -32,6 +32,7 @@ const Header = () => {
           <a href="#entregables">{t.header.deliverables}</a>
           <a href="#demo">{t.header.demo}</a>
           <a href="#pricing">{t.header.investment}</a>
+          <a href="#agendar">{t.header.booking}</a>
           <a href="#faq">{t.header.faq}</a>
         </Nav>
         <CallToActions>
