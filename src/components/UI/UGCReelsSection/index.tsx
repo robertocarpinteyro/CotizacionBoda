@@ -18,10 +18,10 @@ import {
 import { useLanguage } from '@/i18n';
 
 const deliverableImages = [
-  'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334370/91ebce557df7d97b598c4084a77f100f-xxlarge_w1dddt.jpg',
-  'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334085/cd1fbe2511c34500d1c8a86399579a25-xxlarge_uzzrte.jpg',
-  'https://res.cloudinary.com/dxcr9utre/image/upload/v1770334142/9837c6f78552d14f441722a0f80cafb0-xxlarge_x6grtm.jpg',
-  null,
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/e2895da1b7d6873ca6dbbf0506938e62-xlarge_hxpovb.jpg',
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/0eace357ea4396e95a2d264cae0af972-xxlarge_gl5hfh.jpg',
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/a4253ba2c762584d3879ded2c548e31e-xlarge_l6djtf.jpg',
+  'https://res.cloudinary.com/dxcr9utre/image/upload/v1784758724/d6be689b31c87cf7fec63cb0647500ee-xlarge_etaspe.jpg',
 ];
 
 const UGCReelsSection = () => {
