@@ -64,6 +64,23 @@ export const HeroTextContainer = styled.div`
     background-clip: text;
   }
 
+  /* Título línea 1 ("Tu Boda"): Dancing Script con glow */
+  > div:first-child > div:first-child h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.1;
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--light-gold);
+    color: var(--light-gold);
+    text-shadow: 0 0 18px rgba(201, 169, 110, 0.75),
+      0 0 42px rgba(201, 169, 110, 0.45),
+      0 0 72px rgba(201, 169, 110, 0.25);
+  }
+
   p {
     max-width: 41.75rem;
     color: #bdbdbd;
@@ -79,6 +96,10 @@ export const HeroTextContainer = styled.div`
     h1 {
       font-size: 2.75rem;
       font-weight: 300;
+    }
+
+    > div:first-child > div:first-child h1 {
+      font-size: 3.75rem;
     }
 
     p {

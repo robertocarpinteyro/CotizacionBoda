@@ -15,6 +15,10 @@ import {
   PriceTag,
   Price,
   Period,
+  OldPrice,
+  OfferTag,
+  OfferPrice,
+  OfferNote,
   FeaturesList,
   FeatureItem,
   FeatureIcon,
@@ -41,10 +45,25 @@ const PricingSection = () => {
             <PackageCard key={index} $featured={pkg.featured}>
               {pkg.featured && <FeaturedBadge>Popular</FeaturedBadge>}
               <PackageName>{pkg.name}</PackageName>
-              <PriceTag>
-                <Price>{pkg.price}</Price>
-                <Period>{pkg.currency}</Period>
-              </PriceTag>
+              {pkg.offerPrice ? (
+                <>
+                  <PriceTag>
+                    <OldPrice>{pkg.price}</OldPrice>
+                    <Period>{pkg.currency}</Period>
+                  </PriceTag>
+                  <OfferTag>
+                    <OfferPrice>
+                      {pkg.offerPrice} <span>{pkg.currency}</span>
+                    </OfferPrice>
+                    <OfferNote>{pkg.offerNote}</OfferNote>
+                  </OfferTag>
+                </>
+              ) : (
+                <PriceTag>
+                  <Price>{pkg.price}</Price>
+                  <Period>{pkg.currency}</Period>
+                </PriceTag>
+              )}
               <PackageDescription>{pkg.description}</PackageDescription>
               <CTAButton
                 as="a"

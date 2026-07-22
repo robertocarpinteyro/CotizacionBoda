@@ -15,12 +15,12 @@ export const translations = {
     // Hero
     hero: {
       pill: 'Videografía Cinematográfica de Bodas',
-      phrases: ['Tu Boda,', 'Nuestra Película'],
+      phrases: ['Tu Boda,', 'nuestra película'],
       paragraphPhrases: [
         'Cobertura cinematográfica para el momento',
         'más importante de tu vida. 13 de Marzo 2027, Puebla.',
       ],
-      mobilePhrases: ['Tu Boda,', 'Nuestra Película'],
+      mobilePhrases: ['Tu Boda,', 'nuestra película'],
       mobileParagraphPhrases: [
         'Cobertura cinematográfica para el',
         'momento más importante de tu vida.',
@@ -147,6 +147,8 @@ export const translations = {
           name: 'Esencial',
           price: '$24,900',
           currency: 'MXN (sin IVA)',
+          offerPrice: '',
+          offerNote: '',
           description: 'Lo esencial para capturar tu día con calidad cinematográfica.',
           featured: false,
           features: [
@@ -160,6 +162,8 @@ export const translations = {
           name: 'Completo',
           price: '$36,000',
           currency: 'MXN',
+          offerPrice: '$31,000',
+          offerNote: 'pagando de contado',
           description: 'La experiencia completa de cine para tu boda. Nuestro más solicitado.',
           featured: true,
           features: [
@@ -233,12 +237,12 @@ export const translations = {
     // Hero
     hero: {
       pill: 'Cinematic Wedding Videography',
-      phrases: ['Your Wedding,', 'Our Film'],
+      phrases: ['Your Wedding,', 'our film'],
       paragraphPhrases: [
         'Cinematic coverage for the most important',
         'moment of your life. March 13th, 2027, Puebla.',
       ],
-      mobilePhrases: ['Your Wedding,', 'Our Film'],
+      mobilePhrases: ['Your Wedding,', 'our film'],
       mobileParagraphPhrases: [
         'Cinematic coverage for the most',
         'important moment of your life.',
@@ -365,6 +369,8 @@ export const translations = {
           name: 'Essential',
           price: '$24,900',
           currency: 'MXN (tax-free)',
+          offerPrice: '',
+          offerNote: '',
           description: 'The essentials to capture your day with cinematic quality.',
           featured: false,
           features: [
@@ -378,6 +384,8 @@ export const translations = {
           name: 'Complete',
           price: '$36,000',
           currency: 'MXN',
+          offerPrice: '$31,000',
+          offerNote: 'paying in full',
           description: 'The full cinema experience for your wedding. Our most requested.',
           featured: true,
           features: [

@@ -183,6 +183,56 @@ export const Period = styled.div`
   font-weight: 400;
 `;
 
+export const OldPrice = styled.div`
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1;
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+`;
+
+export const OfferTag = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-bottom: 1rem;
+`;
+
+export const OfferPrice = styled.div`
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  text-shadow: 0 0 24px rgba(201, 169, 110, 0.35);
+
+  span {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+`;
+
+export const OfferNote = styled.div`
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--light-gold);
+  text-transform: uppercase;
+`;
+
 export const PackageDescription = styled.p`
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.6);
