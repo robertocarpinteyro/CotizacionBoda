@@ -66,8 +66,22 @@ const BookingSection = () => {
             </Field>
 
             <Field>
-              <Label htmlFor="location">{t.booking.fields.location}</Label>
-              <Input id="location" name="location" type="text" />
+              <Label htmlFor="meetingDate">{t.booking.fields.meetingDate}</Label>
+              <Input id="meetingDate" name="meeting_date" type="date" required />
+            </Field>
+
+            <Field>
+              <Label htmlFor="meetingTime">{t.booking.fields.meetingTime}</Label>
+              <Select id="meetingTime" name="meeting_time" defaultValue="">
+                <option value="" disabled>
+                  {t.booking.timePlaceholder}
+                </option>
+                {t.booking.timeOptions.map((opt) => (
+                  <option key={opt} value={opt}>
+                    {opt}
+                  </option>
+                ))}
+              </Select>
             </Field>
 
             <Field>

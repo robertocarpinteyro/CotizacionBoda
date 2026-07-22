@@ -215,12 +215,13 @@ export const translations = {
 
     // Booking (BookingSection)
     booking: {
-      title: 'Agenda tu Cita',
-      subtitle: 'Elige la fecha de tu boda y déjanos tus datos. Te contactamos para apartar tu día.',
+      title: 'Agenda una Reunión',
+      subtitle: 'Reserva una reunión presencial para platicar todos los detalles de tu boda.',
       fields: {
         name: 'Nombre completo',
-        weddingDate: 'Fecha de la boda',
-        location: 'Lugar / Ciudad',
+        weddingDate: 'Fecha de tu boda',
+        meetingDate: 'Fecha preferida para la reunión',
+        meetingTime: 'Horario preferido',
         package: 'Paquete de interés',
         phone: 'WhatsApp',
         email: 'Correo electrónico',
@@ -228,10 +229,12 @@ export const translations = {
       },
       packagePlaceholder: 'Selecciona un paquete',
       packageOptions: ['Esencial', 'Completo', 'Aún no lo sé'],
-      submit: 'Solicitar Fecha',
+      timePlaceholder: 'Selecciona un horario',
+      timeOptions: ['Mañana (9am - 1pm)', 'Tarde (1pm - 6pm)', 'Por definir'],
+      submit: 'Solicitar Reunión',
       submitting: 'Enviando...',
       successTitle: '¡Solicitud enviada!',
-      successMessage: 'Gracias. Te contactaremos muy pronto para confirmar tu fecha.',
+      successMessage: 'Gracias. Te contactaremos muy pronto para confirmar tu reunión.',
       errorMessage: 'Ocurrió un error. Intenta de nuevo o escríbenos por WhatsApp.',
     },
 
@@ -478,12 +481,13 @@ export const translations = {
 
     // Booking (BookingSection)
     booking: {
-      title: 'Book Your Appointment',
-      subtitle: 'Pick your wedding date and leave us your details. We will contact you to reserve your day.',
+      title: 'Book a Meeting',
+      subtitle: 'Reserve an in-person meeting to talk through all the details of your wedding.',
       fields: {
         name: 'Full name',
-        weddingDate: 'Wedding date',
-        location: 'Location / City',
+        weddingDate: 'Your wedding date',
+        meetingDate: 'Preferred meeting date',
+        meetingTime: 'Preferred time',
         package: 'Package of interest',
         phone: 'WhatsApp',
         email: 'Email',
@@ -491,10 +495,12 @@ export const translations = {
       },
       packagePlaceholder: 'Select a package',
       packageOptions: ['Essential', 'Complete', "I'm not sure yet"],
-      submit: 'Request Date',
+      timePlaceholder: 'Select a time',
+      timeOptions: ['Morning (9am - 1pm)', 'Afternoon (1pm - 6pm)', 'To be defined'],
+      submit: 'Request Meeting',
       submitting: 'Sending...',
       successTitle: 'Request sent!',
-      successMessage: 'Thank you. We will contact you very soon to confirm your date.',
+      successMessage: 'Thank you. We will contact you very soon to confirm your meeting.',
       errorMessage: 'Something went wrong. Please try again or message us on WhatsApp.',
     },
 

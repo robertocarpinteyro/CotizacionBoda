@@ -4,9 +4,8 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
   padding: 1rem 0;
-  background-color: rgba(10, 9, 8, 0.95);
+  background-color: rgba(10, 9, 8, 0.97);
   border-bottom: 0.5px solid rgba(201, 169, 110, 0.3);
-  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
