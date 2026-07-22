@@ -36,7 +36,7 @@ const Footer = () => {
       links: [
         { text: t.header.investment, url: '#pricing' },
         { text: t.header.faq, url: '#faq' },
-        { text: t.footer.contact, url: 'https://wa.me/52222172882?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
+        { text: t.footer.contact, url: 'https://wa.me/522211102997?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
       ],
     },
   ];

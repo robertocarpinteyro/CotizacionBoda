@@ -48,7 +48,7 @@ const PricingSection = () => {
               <PackageDescription>{pkg.description}</PackageDescription>
               <CTAButton
                 as="a"
-                href="https://wa.me/52222172882?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica"
+                href="https://wa.me/522211102997?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica"
                 target="_blank"
                 rel="noopener noreferrer"
                 $featured={pkg.featured}
