@@ -11,6 +11,7 @@ import {
 } from './styles';
 import { GetStartedButton } from '@/components';
 import { useLanguage } from '@/i18n';
+import { WHATSAPP_URL } from '@/config/contact';
 
 const Header = () => {
   const { t, locale, toggleLanguage } = useLanguage();
@@ -39,7 +40,7 @@ const Header = () => {
           <LangToggle onClick={toggleLanguage}>
             {locale === 'es' ? 'EN' : 'ES'}
           </LangToggle>
-          <GetStartedButton padding="0.75rem 1.5rem" href="#pricing">{t.header.cta}</GetStartedButton>
+          <GetStartedButton padding="0.75rem 1.5rem" href={WHATSAPP_URL}>{t.header.whatsapp}</GetStartedButton>
         </CallToActions>
       </Inner>
     </Wrapper>

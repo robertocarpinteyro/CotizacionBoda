@@ -1,12 +1,8 @@
 'use client';
 import React, { useState } from 'react';
+import { Wrapper, Container, Header, Title, Subtitle } from './styles';
 import {
-  Wrapper,
-  Container,
-  Header,
-  Title,
-  Subtitle,
-  Form,
+  FormGrid,
   Field,
   Label,
   Input,
@@ -16,16 +12,9 @@ import {
   StatusMessage,
   SuccessBox,
   Honeypot,
-} from './styles';
+} from '@/components/Common/Form/styles';
+import { submitToWeb3Forms } from '@/components/Common/Form/web3forms';
 import { useLanguage } from '@/i18n';
-
-// ─────────────────────────────────────────────────────────────
-// Web3Forms: obtén tu access key GRATIS en https://web3forms.com
-// (te la envían a tu correo). Pégala aquí abajo o define la
-// variable de entorno NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY.
-// ─────────────────────────────────────────────────────────────
-const WEB3FORMS_ACCESS_KEY =
-  process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? 'PEGA-AQUI-TU-ACCESS-KEY';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -36,26 +25,14 @@ const BookingSection = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus('submitting');
-
     const form = e.currentTarget;
-    const formData = new FormData(form);
-    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-    formData.append('subject', 'Nueva solicitud de fecha — Cotización Boda');
-    formData.append('from_name', 'Cotización Boda');
-
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
-      });
-      const data = await res.json();
-      if (data.success) {
-        setStatus('success');
-        form.reset();
-      } else {
-        setStatus('error');
-      }
-    } catch {
+    const ok = await submitToWeb3Forms(form, {
+      subject: 'Nueva solicitud de fecha — Cotización Boda',
+    });
+    if (ok) {
+      setStatus('success');
+      form.reset();
+    } else {
       setStatus('error');
     }
   };
@@ -74,7 +51,7 @@ const BookingSection = () => {
             <p>{t.booking.successMessage}</p>
           </SuccessBox>
         ) : (
-          <Form onSubmit={handleSubmit}>
+          <FormGrid onSubmit={handleSubmit}>
             {/* Honeypot anti-spam */}
             <Honeypot type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" />
 
@@ -129,7 +106,7 @@ const BookingSection = () => {
             {status === 'error' && (
               <StatusMessage $error>{t.booking.errorMessage}</StatusMessage>
             )}
-          </Form>
+          </FormGrid>
         )}
       </Container>
     </Wrapper>

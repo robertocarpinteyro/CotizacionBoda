@@ -3,27 +3,16 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.section`
   width: 100%;
-  padding: 8rem 0;
-  background: linear-gradient(180deg, var(--Background) 0%, #0f0f0f 100%);
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.5), transparent);
-  }
+  padding: 6rem 0 8rem;
+  background: var(--Background);
 
   @media (max-width: 768px) {
-    padding: 4rem 0;
+    padding: 3rem 0 4rem;
   }
 `;
 
 export const Container = styled.div`
-  max-width: 780px;
+  max-width: 680px;
   margin: 0 auto;
   padding: 0 2rem;
 
@@ -34,7 +23,7 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 
   @media (max-width: 768px) {
     margin-bottom: 2rem;
@@ -42,19 +31,19 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   line-height: 1.2;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 `;
 
 export const Subtitle = styled.p`
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   color: var(--light-gray);
   font-weight: 400;
 

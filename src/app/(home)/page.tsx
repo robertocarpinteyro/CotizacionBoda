@@ -6,6 +6,7 @@ import {
   AutoReelsSection,
   PricingSection,
   BookingSection,
+  QuestionsSection,
   FAQ,
 } from '@/components';
 
@@ -20,6 +21,7 @@ export default function Home() {
       <PricingSection />
       <BookingSection />
       <FAQ />
+      <QuestionsSection />
     </main>
   );
 }

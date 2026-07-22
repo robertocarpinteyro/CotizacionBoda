@@ -8,6 +8,8 @@ interface GetStartedButtonProps {
 }
 
 const GetStartedButton = ({ padding, children, href = '/' }: GetStartedButtonProps) => {
+  const isExternal = href.startsWith('http');
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     // Only apply smooth scroll for anchor links
     if (href.startsWith('#')) {
@@ -31,6 +33,8 @@ const GetStartedButton = ({ padding, children, href = '/' }: GetStartedButtonPro
       }}
       href={href}
       onClick={handleClick}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
     >
       {children || 'Get Started'}
     </LinkTo>

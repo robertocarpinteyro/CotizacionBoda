@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import ic_copyright from '../../../../public/svgs/ic_copyright.svg';
 import { useLanguage } from '@/i18n';
+import { WHATSAPP_URL } from '@/config/contact';
 
 import {
   Wrapper,
@@ -36,7 +37,7 @@ const Footer = () => {
       links: [
         { text: t.header.investment, url: '#pricing' },
         { text: t.header.faq, url: '#faq' },
-        { text: t.footer.contact, url: 'https://wa.me/522211102997?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica' },
+        { text: t.footer.contact, url: WHATSAPP_URL },
       ],
     },
   ];

@@ -11,6 +11,7 @@ export const translations = {
       faq: 'FAQ',
       booking: 'Agenda',
       cta: 'Ver Inversión',
+      whatsapp: 'Hablar por WhatsApp',
     },
 
     // Hero
@@ -234,13 +235,30 @@ export const translations = {
       errorMessage: 'Ocurrió un error. Intenta de nuevo o escríbenos por WhatsApp.',
     },
 
+    // Questions (QuestionsSection)
+    questions: {
+      title: '¿Tienes dudas?',
+      subtitle: 'Escríbenos tu pregunta y te respondemos a la brevedad.',
+      fields: {
+        name: 'Nombre',
+        email: 'Correo electrónico',
+        phone: 'WhatsApp (opcional)',
+        question: 'Tu pregunta',
+      },
+      submit: 'Enviar Pregunta',
+      submitting: 'Enviando...',
+      successTitle: '¡Pregunta enviada!',
+      successMessage: 'Gracias. Te responderemos muy pronto.',
+      errorMessage: 'Ocurrió un error. Intenta de nuevo o escríbenos por WhatsApp.',
+    },
+
     // Footer
     footer: {
       tagline: 'Tu boda merece ser una película',
       description: 'Contáctanos para conocer más sobre nuestra propuesta de videografía cinematográfica para tu boda.',
       sections: 'Secciones',
       information: 'Información',
-      contact: 'Contacto',
+      contact: 'Hablar por WhatsApp',
       copyright: '2026 Oasis Creativa. Todos los derechos reservados.',
       lang: 'Español (México)',
     },
@@ -256,6 +274,7 @@ export const translations = {
       faq: 'FAQ',
       booking: 'Book',
       cta: 'View Investment',
+      whatsapp: 'Chat on WhatsApp',
     },
 
     // Hero
@@ -479,13 +498,30 @@ export const translations = {
       errorMessage: 'Something went wrong. Please try again or message us on WhatsApp.',
     },
 
+    // Questions (QuestionsSection)
+    questions: {
+      title: 'Have questions?',
+      subtitle: 'Send us your question and we will get back to you shortly.',
+      fields: {
+        name: 'Name',
+        email: 'Email',
+        phone: 'WhatsApp (optional)',
+        question: 'Your question',
+      },
+      submit: 'Send Question',
+      submitting: 'Sending...',
+      successTitle: 'Question sent!',
+      successMessage: 'Thank you. We will get back to you very soon.',
+      errorMessage: 'Something went wrong. Please try again or message us on WhatsApp.',
+    },
+
     // Footer
     footer: {
       tagline: 'Your wedding deserves to be a film',
       description: 'Contact us to learn more about our cinematic videography proposal for your wedding.',
       sections: 'Sections',
       information: 'Information',
-      contact: 'Contact',
+      contact: 'Chat on WhatsApp',
       copyright: '2026 Oasis Creativa. All rights reserved.',
       lang: 'English',
     },

@@ -65,13 +65,7 @@ const PricingSection = () => {
                 </PriceTag>
               )}
               <PackageDescription>{pkg.description}</PackageDescription>
-              <CTAButton
-                as="a"
-                href="https://wa.me/522211102997?text=Me%20interesa%20la%20cotización%20de%20boda%20cinematográfica"
-                target="_blank"
-                rel="noopener noreferrer"
-                $featured={pkg.featured}
-              >
+              <CTAButton as="a" href="#agendar" $featured={pkg.featured}>
                 {t.pricing.cta}
               </CTAButton>
               <FeaturesList>
