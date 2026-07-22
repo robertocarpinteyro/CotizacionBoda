@@ -18,6 +18,11 @@ import {
 } from './styles';
 import { useLanguage } from '@/i18n';
 
+const demoVideos = [
+  'https://drive.google.com/file/d/1GaA08aDgXoK2xkNWs3qsbMkFpDyP56xM/preview',
+  'https://drive.google.com/file/d/1vFgMKswYayMuhiS5OgyqsRAPor4wuFx9/preview',
+];
+
 const AutoReelsSection = () => {
   const { t } = useLanguage();
 
@@ -28,14 +33,16 @@ const AutoReelsSection = () => {
           <Title>{t.demo.title}</Title>
           <Subtitle>{t.demo.subtitle}</Subtitle>
         </Header>
-        <DemoVideoContainer>
-          <DemoVideoFrame
-            src="https://drive.google.com/file/d/1AtBE8gsV4VG2UIUVbKNvwzLniZIjwzvT/preview"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="Demo Video - Cinematic Quality"
-          />
-        </DemoVideoContainer>
+        {demoVideos.map((videoSrc, index) => (
+          <DemoVideoContainer key={index}>
+            <DemoVideoFrame
+              src={videoSrc}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title={`Demo Video ${index + 1} - Cinematic Quality`}
+            />
+          </DemoVideoContainer>
+        ))}
 
         <PromoSection>
           <PromoBadge>{t.demo.promoBadge}</PromoBadge>
