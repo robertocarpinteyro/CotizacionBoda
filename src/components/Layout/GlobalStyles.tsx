@@ -30,7 +30,7 @@ export const GlobalStyles = styled.createGlobalStyle`
   body {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: 'Josefin Sans', 'SF Pro Display', sans-serif;
+    font-family: 'EB Garamond', 'Josefin Sans', serif;
     background-color: var(--Background);
     color: var(--white);
 

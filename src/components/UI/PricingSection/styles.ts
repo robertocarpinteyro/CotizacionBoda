@@ -209,9 +209,11 @@ export const OfferPrice = styled.div`
   gap: 0.5rem;
   font-size: 3rem;
   font-weight: 800;
-  color: var(--gold);
+  color: var(--light-gold);
   line-height: 1;
-  text-shadow: 0 0 24px rgba(201, 169, 110, 0.35);
+  text-shadow: 0 0 16px rgba(201, 169, 110, 0.8),
+    0 0 34px rgba(201, 169, 110, 0.5),
+    0 0 60px rgba(201, 169, 110, 0.3);
 
   span {
     font-size: 1.125rem;
