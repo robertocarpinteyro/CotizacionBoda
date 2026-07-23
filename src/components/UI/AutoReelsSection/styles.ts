@@ -73,6 +73,14 @@ export const DemoVideoFrame = styled.iframe`
   border: none;
 `;
 
+export const DemoVideo = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+`;
+
 export const PromoSection = styled.div`
   text-align: center;
   padding: 4rem 2rem;

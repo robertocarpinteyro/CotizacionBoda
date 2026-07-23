@@ -7,7 +7,7 @@ import {
   Title,
   Subtitle,
   DemoVideoContainer,
-  DemoVideoFrame,
+  DemoVideo,
   PromoSection,
   PromoCard,
   PromoIcon,
@@ -19,8 +19,8 @@ import {
 import { useLanguage } from '@/i18n';
 
 const demoVideos = [
-  'https://drive.google.com/file/d/1GaA08aDgXoK2xkNWs3qsbMkFpDyP56xM/preview',
-  'https://drive.google.com/file/d/1vFgMKswYayMuhiS5OgyqsRAPor4wuFx9/preview',
+  'https://res.cloudinary.com/dxcr9utre/video/upload/v1784764831/26Abril_WeddingFilm_TizianayVladimir_2_1_y8ixqw.mp4',
+  'https://res.cloudinary.com/dxcr9utre/video/upload/v1784764446/Marypaz_CasaVelo_2_u9stsr.mp4',
 ];
 
 const AutoReelsSection = () => {
@@ -35,12 +35,14 @@ const AutoReelsSection = () => {
         </Header>
         {demoVideos.map((videoSrc, index) => (
           <DemoVideoContainer key={index}>
-            <DemoVideoFrame
-              src={videoSrc}
-              allow="autoplay; encrypted-media"
-              allowFullScreen
+            <DemoVideo
+              controls
+              playsInline
+              preload="metadata"
               title={`Demo Video ${index + 1} - Cinematic Quality`}
-            />
+            >
+              <source src={videoSrc} type="video/mp4" />
+            </DemoVideo>
           </DemoVideoContainer>
         ))}
 
